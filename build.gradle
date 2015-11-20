@@ -25,6 +25,6 @@ dependencies {
     compile 'com.google.oauth-client:google-oauth-client-jetty:1.20.0'
     compile 'com.google.apis:google-api-services-script:v1-rev1-1.20.0'
     testCompile 'junit:junit:4.12'
-    metricCompile 'JDepend: jdepend-2.9.1'  /*add in the metric to the build file for program*/
-    metricCompile 'JavaNCSS: javancss-32.59'
+    testCompile 'JDepend: jdepend-2.9.1'  /*add in the metric to the build file for program*/
+    testCompile 'JavaNCSS: javancss-32.59'
 }
