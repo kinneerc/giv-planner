@@ -56,6 +56,10 @@ public void setSite(Place site) {
 	this.site = site;
 }
 
+public boolean satisfied(Route ans) {
+	// TODO Auto-generated method stub
+	return false;
+}
 
 
 }
