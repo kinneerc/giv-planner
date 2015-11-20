@@ -40,6 +40,14 @@ jacoco {
     reportsDir = file("$buildDir/reports/jacoco")
 }
 
+jacocoTestReport {
+    reports {
+    xml.enabled false
+    csv.enabled false
+    html.destination "${buildDir}/jacocoHtml"
+    }
+}
+
 task javancss << {
     mkdir reportsDir
 }
