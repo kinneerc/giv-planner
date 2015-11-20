@@ -23,14 +23,23 @@ repositories {
     mavenCentral()
 }
 
+configurations {
+    javancss
+}
+
 dependencies {
     compile 'com.google.api-client:google-api-client:1.20.0'
     compile 'com.google.oauth-client:google-oauth-client-jetty:1.20.0'
     compile 'com.google.apis:google-api-services-script:v1-rev1-1.20.0'
     testCompile 'junit:junit:4.12'
+    javancss 'org.codehaus.javancss:javancss:32.59'
 }
 
 jacoco {
     toolVersion =  "0.7.5.201505241946"
     reportsDir = file("$buildDir/reports/jacoco")
+}
+
+task javancss << {
+    mkdir reportsDir
 }
