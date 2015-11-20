@@ -3,6 +3,7 @@ package edu.allegheny.vanschedule;
 import java.util.ArrayList;
 
 import org.junit.Test;
+import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
 
@@ -23,6 +24,31 @@ public class TestScheduler {
 		assertEquals(req1.satisfied(ans),true);
 		assertEquals(req2.satisfied(ans),true);
 		
+	}
+	
+	@Test
+	public void testScheduleRand(){
+		
+		Random rand = new Random();
+		
+		for (int trials = 0; trials < 50; trials++){ 
+		
+		ArrayList<Request> reqs = new ArrayList<Request>();
+		
+		for (int reqCount = 0; reqCount < 12; reqCount++){
+			reqs.add(
+					new Request(
+							new Place(rand.nextLong()+""),
+							new Time(rand.nextInt(11),rand.nextInt(60)),
+							new Time(rand.nextInt(11)+12,rand.nextInt(60))));
+		}
+		
+		Route ans = Scheduler.schedule(reqs);
+		
+		for (Request r : reqs)
+			assertEquals(r.satisfied(ans),true);
+		
+	}
 	}
 
 }
