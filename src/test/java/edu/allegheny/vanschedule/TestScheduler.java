@@ -21,8 +21,8 @@ public class TestScheduler {
 		
 		Route ans = Scheduler.schedule(reqs);
 		
-		assertEquals(req1.satisfied(ans),true);
-		assertEquals(req2.satisfied(ans),true);
+		assertEquals(true,req1.satisfied(ans));
+		assertEquals(true,req2.satisfied(ans));
 		
 	}
 	
@@ -46,7 +46,7 @@ public class TestScheduler {
 		Route ans = Scheduler.schedule(reqs);
 		
 		for (Request r : reqs)
-			assertEquals(r.satisfied(ans),true);
+			assertEquals(true,r.satisfied(ans));
 		
 	}
 	}
