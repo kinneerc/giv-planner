@@ -10,8 +10,8 @@ public class Time {
     private int minuite;
 
     public Time (int hour, int minuite){
-        this.hour = hour;
-        this.minuite = minuite;
+        setHour(hour);
+        setMinuite(minuite);
     }
 
     public int getHour(){
@@ -41,6 +41,10 @@ public class Time {
      */
     public int getDiff(Time time){
         return 0;
+    }
+
+    public static Time parse(String in){
+        return new Time(0,0);
     }
 
 }
