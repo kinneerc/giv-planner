@@ -93,6 +93,52 @@ public class TestTime {
 
     }
 
+    @Test
+    public void testParse(){
+        Time a = Time.parse("1:55 AM");
+
+        assertEquals(a.getHour(),1);
+        assertEquals(a.getMinuite(),55);
+
+        a = Time.parse("01:55 AM");
+
+        assertEquals(a.getHour(),1);
+        assertEquals(a.getMinuite(),55);
+
+        a = Time.parse("01:55 am");
+
+        assertEquals(a.getHour(),1);
+        assertEquals(a.getMinuite(),55);
+
+        a = Time.parse("1:55 PM");
+
+        assertEquals(a.getHour(),13);
+        assertEquals(a.getMinuite(),55);
+
+        a = Time.parse("01:55 PM");
+
+        assertEquals(a.getHour(),13);
+        assertEquals(a.getMinuite(),55);
+
+        a = Time.parse("01:55 pm");
+
+        assertEquals(a.getHour(),13);
+        assertEquals(a.getMinuite(),55);
+
+        a = Time.parse("12:55 am");
+
+        assertEquals(a.getHour(),0);
+        assertEquals(a.getMinuite(),55);
+
+
+        a = Time.parse("12:55 pm");
+
+        assertEquals(a.getHour(),12);
+        assertEquals(a.getMinuite(),55);
+
+
+    }
+
 
 
 }
