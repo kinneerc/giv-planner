@@ -1,3 +1,5 @@
+package edu.allegheny.vanschedule.frontend;
+
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
 import com.google.api.client.extensions.jetty.auth.oauth2.LocalServerReceiver;
@@ -21,7 +23,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.List;
 
-public class AppsScriptApiQuickstart {
+public class AppsScriptApi {
     /** Application name. */
     private static final String APPLICATION_NAME =
         "Google Apps Script Execution API Java Quickstart";
@@ -62,7 +64,7 @@ public class AppsScriptApiQuickstart {
     public static Credential authorize() throws IOException {
         // Load client secrets.
         InputStream in =
-            AppsScriptApiQuickstart.class.getResourceAsStream("/client_secret.json");
+            AppsScriptApi.class.getResourceAsStream("/client_secret.json");
         GoogleClientSecrets clientSecrets =
             GoogleClientSecrets.load(JSON_FACTORY, new InputStreamReader(in));
 
