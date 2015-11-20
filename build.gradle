@@ -9,6 +9,7 @@
 
 apply plugin: 'java'
 apply plugin: 'application'
+apply plugin: 'eclipse'
 
 mainClassName = 'edu.allegheny.vanschedule.frontend.AppsScriptApi'
 sourceCompatibility = 1.7
