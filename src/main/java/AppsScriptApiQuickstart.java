@@ -162,7 +162,7 @@ public class AppsScriptApiQuickstart {
     public static void main(String[] args) throws IOException {
         // ID of the script to call. Acquire this from the Apps Script editor,
         // under Publish > Deploy as API executable.
-        String scriptId = "ENTER_YOUR_SCRIPT_ID_HERE";
+        String scriptId = "M86OkEIJ03dQqJ-qnh6DzzMxe9KDWCxKj";
         Script service = getScriptService();
 
         // Create an execution request object.
