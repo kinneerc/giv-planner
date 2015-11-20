@@ -17,7 +17,7 @@ public class Place {
         return address;
     }
 
-    public String setAddress(String address){
+    public void setAddress(String address){
         this.address = address;
     }
 
