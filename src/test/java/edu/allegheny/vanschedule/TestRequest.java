@@ -83,4 +83,81 @@ public class TestRequest {
 
     	assertEquals(p.getName(),actual.getName());
     }
+    
+    @Test
+    public void testSatisfied(){
+    	 Place p = new Place("2nd District");
+         Time a = new Time(10,20);
+         Time d = new Time(12,30);
+
+       	Request r = new Request(p,a,d);
+       	Route route = new Route();
+       	
+       Stop s = new Stop(p);
+       
+       s.setArrival(a);
+       s.setDeparture(d);
+       
+       route.addStop(s);
+       
+       assertEquals(true,r.satisfied(route));
+       	
+       	
+    }
+    
+    @Test
+    public void testWaitTime(){
+    	Place p = new Place("2nd District");
+        Time a = new Time(10,20);
+        Time d = new Time(12,30);
+
+      	Request r = new Request(p,a,d);
+      	Route route = new Route();
+      	
+      Stop s = new Stop(p);
+      
+      s.setArrival(a);
+      s.setDeparture(d);
+      
+      route.addStop(s);
+      
+      assertEquals(0,r.waitTime(route));
+      
+      a.setMinuite(10);
+      
+      assertEquals(10,r.waitTime(route));
+      
+      a.setMinuite(30);
+      
+      assertEquals(0,r.waitTime(route));
+      
+    }
+    
+    @Test
+    public void testLateTime(){
+    	Place p = new Place("2nd District");
+        Time a = new Time(10,20);
+        Time d = new Time(12,30);
+
+      	Request r = new Request(p,a,d);
+      	Route route = new Route();
+      	
+      Stop s = new Stop(p);
+      
+      s.setArrival(a);
+      s.setDeparture(d);
+      
+      route.addStop(s);
+      
+      assertEquals(0,r.lateTime(route));
+      
+      a.setMinuite(10);
+      
+      assertEquals(0,r.lateTime(route));
+      
+      a.setMinuite(30);
+      
+      assertEquals(10,r.lateTime(route));
+      
+    }
 }
