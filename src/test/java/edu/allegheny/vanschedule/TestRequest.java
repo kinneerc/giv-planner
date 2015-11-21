@@ -51,11 +51,11 @@ public class TestRequest {
       Time a = new Time(10,20);
       Time d = new Time(12,30);
 
-    	Request r = new Request(p,a,d);
+      Request r = new Request(p,a,new Time(5,55));
       r.setDesiredDeparture(d);
-      Time actual = r.getDesiredArrival();
+      Time actual = r.getDesiredDeparture();
 
-    	assertEquals(d.getHour(),actual.getHour());
+      assertEquals(d.getHour(),actual.getHour());
       assertEquals(d.getMinuite(),actual.getMinuite());
     }
 

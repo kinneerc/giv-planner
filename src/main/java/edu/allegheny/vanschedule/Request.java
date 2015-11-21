@@ -56,9 +56,19 @@ public void setSite(Place site) {
 	this.site = site;
 }
 
-public boolean satisfied(Route ans) {
+public boolean satisfied(Route route) {
 	// TODO Auto-generated method stub
 	return false;
+}
+
+public int waitTime(Route route){
+	// TODO Auto-gen
+	return Integer.MAX_VALUE;
+}
+
+public int lateTime(Route route){
+	// TODO Auto-gen
+	return Integer.MAX_VALUE;
 }
 
 
