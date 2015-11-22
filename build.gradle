@@ -35,6 +35,23 @@ dependencies {
     javancss 'org.codehaus.javancss:javancss:32.59'
 }
 
+test {
+    jacoco {
+        append = false
+        destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        classDumpFile = file("$buildDir/jacoco/classpathdumps")
+    }
+}
+
+jacoco {
+    applyTo run
+}
+
+task applicationCodeCoverageReport(type:JacocoReport){
+    executionData run
+    sourceSets sourceSets.main
+}
+
 jacoco {
     toolVersion =  "0.7.5.201505241946"
     reportsDir = file("$buildDir/reports/jacoco")
