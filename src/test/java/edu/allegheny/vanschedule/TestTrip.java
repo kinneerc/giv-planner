@@ -13,7 +13,7 @@ public class TestTrip {
 
       Place actual = t.getStart();
 
-      assertEquals(s.getName(), actual.getStart());
+      assertEquals(s.getName(), actual.getName());
 
     }
 
@@ -26,7 +26,7 @@ public class TestTrip {
       t.setStart(s);
       Place actual = t.getStart();
 
-      assertEquals(s.getName(), actual.getStart());
+      assertEquals(s.getName(), actual.getName());
 
     }
 }
