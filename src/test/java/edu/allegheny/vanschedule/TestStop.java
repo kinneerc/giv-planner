@@ -11,17 +11,18 @@ public class TestStop {
 
     @Test
     public void testGetArrival(){
+      Time t = new Time(10,20);
     }
 
-    @Test 
+    @Test
     public void testGetDeparture(){
     }
 
-    @Test 
+    @Test
     public void testSetArrival(){
     }
 
-    @Test 
+    @Test
     public void testSetDeparture(){
     }
 
