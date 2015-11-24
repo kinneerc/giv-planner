@@ -67,4 +67,9 @@ jacocoTestReport {
 
 task javancss << {
     mkdir reportsDir
+
+     ant {
+        taskdef name:'javancss', classname:'javancss.JavancssAntTask', classpath:configurations.javancss.asPath
+        javancss srcdir:'src', ccnPerFuncMax:javaNCSS_ccnPerFuncMax, abortOnFail:javaNCSS_abortOnFail, generateReport:true, outputfile:"$reportsDir/javancss_metrics.txt", format:'plain'
+    }
 }
