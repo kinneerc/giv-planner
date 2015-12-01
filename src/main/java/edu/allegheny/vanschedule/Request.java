@@ -1,13 +1,13 @@
 package edu.allegheny.vanschedule;
 
 public class Request {
-	
+
 private Time desiredArrival;
 private Time desiredDeparture;
 private Place site;
 
 public Request(Place p, Time arrive, Time depart) {
-	
+
 	desiredArrival = arrive;
 	desiredDeparture = depart;
 	site = p;
@@ -42,7 +42,7 @@ public void setDesiredDeparture(Time desiredDeparture) {
 	this.desiredDeparture = desiredDeparture;
 }
 
-/**
+/**@ginozab: Hey before I get too far, how are you formatting the time for the Re, is it 12 hr or 24 hr?
  * @return the site
  */
 public Place getSite() {
