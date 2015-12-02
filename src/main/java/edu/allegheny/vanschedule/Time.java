@@ -6,7 +6,7 @@ package edu.allegheny.vanschedule;
 public class Time {
 
     private int hour;
-    private int minuite;
+    private int minute;
 
     public Time (int hour, int minute){
         setHour(hour);
@@ -18,7 +18,7 @@ public class Time {
     }
 
     public int getMinute(){
-        return minuite;
+        return minute;
     }
 
     public void setHour(int hour){
@@ -27,7 +27,7 @@ public class Time {
     }
 
     public void setMinute(int minute){
-        if (minuite >= 0 && minute <= 59)
+        if (minute >= 0 && minute <= 59)
             this.minute = minute;
     }
 
@@ -41,11 +41,6 @@ public class Time {
     public int getDiff(Time time){
         //getting the difference between the current object and the time of another object
         //consider changing parameter to taking in an object?
-        int hour2 = time.getHour();
-        int minute2 = time.getMinute();
-        int hourAmount = abs(hour - hour2);
-        int minAmount = abs(minute - minute2);
-
         return 0;
     }
 
