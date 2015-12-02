@@ -10,12 +10,12 @@ public class TestTime {
         Time time = new Time(10,5);
         
         assertEquals(10,time.getHour());
-        assertEquals(5,time.getMinuite());
+        assertEquals(5,time.getMinute());
 
         time = new Time(24,60);
         
         assertEquals(false,time.getHour() == 24);
-        assertEquals(false,time.getMinuite() == 60);
+        assertEquals(false,time.getMinute() == 60);
 
     }
 
@@ -35,10 +35,10 @@ public class TestTime {
     public void testGetMinuite(){
 
         Time time = new Time(20,50);
-        assertEquals(50,time.getMinuite());
+        assertEquals(50,time.getMinute());
 
         time = new Time(-20,-70);
-        assertEquals(false,time.getMinuite() == -70);
+        assertEquals(false,time.getMinute() == -70);
 
     }
 
@@ -59,11 +59,11 @@ public class TestTime {
     public void testSetMinuite(){
          Time time = new Time(23,59);
 
-        time.setMinuite(0);
-        assertEquals(0,time.getMinuite());
+        time.setMinute(0);
+        assertEquals(0,time.getMinute());
 
-        time.setMinuite(-25);
-        assertEquals(false,time.getMinuite() == -25);
+        time.setMinute(-25);
+        assertEquals(false,time.getMinute() == -25);
 
 
     }
@@ -100,43 +100,43 @@ public class TestTime {
         Time a = Time.parse("1:55 AM");
 
         assertEquals(1,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
         a = Time.parse("01:55 AM");
 
         assertEquals(1,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
         a = Time.parse("01:55 am");
 
         assertEquals(1,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
         a = Time.parse("1:55 PM");
 
         assertEquals(13,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
         a = Time.parse("01:55 PM");
 
         assertEquals(13,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
         a = Time.parse("01:55 pm");
 
         assertEquals(13,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
         a = Time.parse("12:55 am");
 
         assertEquals(0,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
 
         a = Time.parse("12:55 pm");
 
         assertEquals(12,a.getHour());
-        assertEquals(55,a.getMinuite());
+        assertEquals(55,a.getMinute());
 
 
     }

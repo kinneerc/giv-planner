@@ -15,7 +15,7 @@ public class TestRequest {
       Time actual = r.getDesiredArrival();
 
     	assertEquals(a.getHour(),actual.getHour());
-      assertEquals(a.getMinuite(),actual.getMinuite());
+      assertEquals(a.getMinute(),actual.getMinute());
     }
 
     @Test
@@ -29,7 +29,7 @@ public class TestRequest {
       Time actual = r.getDesiredArrival();
 
     	assertEquals(a.getHour(),actual.getHour());
-      assertEquals(a.getMinuite(),actual.getMinuite());
+      assertEquals(a.getMinute(),actual.getMinute());
     }
 
     @Test
@@ -42,7 +42,7 @@ public class TestRequest {
       Time actual = r.getDesiredDeparture();
 
     	assertEquals(d.getHour(),actual.getHour());
-      assertEquals(d.getMinuite(),actual.getMinuite());
+      assertEquals(d.getMinute(),actual.getMinute());
     }
 
     @Test
@@ -56,7 +56,7 @@ public class TestRequest {
       Time actual = r.getDesiredDeparture();
 
       assertEquals(d.getHour(),actual.getHour());
-      assertEquals(d.getMinuite(),actual.getMinuite());
+      assertEquals(d.getMinute(),actual.getMinute());
     }
 
     @Test
@@ -123,11 +123,11 @@ public class TestRequest {
       
       assertEquals(0,r.waitTime(route));
       
-      a.setMinuite(10);
+      a.setMinute(10);
       
       assertEquals(10,r.waitTime(route));
       
-      a.setMinuite(30);
+      a.setMinute(30);
       
       assertEquals(0,r.waitTime(route));
       
@@ -151,11 +151,11 @@ public class TestRequest {
       
       assertEquals(0,r.lateTime(route));
       
-      a.setMinuite(10);
+      a.setMinute(10);
       
       assertEquals(0,r.lateTime(route));
       
-      a.setMinuite(30);
+      a.setMinute(30);
       
       assertEquals(10,r.lateTime(route));
       
