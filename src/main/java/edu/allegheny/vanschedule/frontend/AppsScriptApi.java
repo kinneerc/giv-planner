@@ -44,7 +44,7 @@ public class AppsScriptApi {
 
     /** Global instance of the scopes required by this quickstart. */
     private static final List<String> SCOPES =
-        Arrays.asList("https://www.googleapis.com/auth/drive");
+        Arrays.asList(new String[] {"https://www.googleapis.com/auth/drive","https://www.googleapis.com/auth/spreadsheets"});
 
     static {
         try {
@@ -169,7 +169,7 @@ public class AppsScriptApi {
 
         // Create an execution request object.
         ExecutionRequest request = new ExecutionRequest()
-                .setFunction("getFoldersUnderRoot");
+                .setFunction("getData");
 
         try {
             // Make the API request.
