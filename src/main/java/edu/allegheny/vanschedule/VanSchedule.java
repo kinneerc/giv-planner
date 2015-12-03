@@ -3,77 +3,64 @@ import java.util.*;
 import java.util.ArrayList;
 public class VanSchedule {
     int i = 0;
+    int b = 0;
     ArrayList<Request> requestList;
     int sizeList;
     int VANSEATS;
+    int arrivalSize;
+    Time aList = new Time();
+    Time rList = new Time();
 
     public VanSchedule(ArrayList<Request> RequestList){
         requestList = RequestList;
         VANSEATS = 6;
         sizeList = requestList.size();
-        //private int i = 0;
 
     }
-    /*the first step we take is to get a new list in order, so the requests with the earliest
-     * desiredArrival times are first.
-     */
-    public ArrayList schedule(){
-        ArrayList<Request> arrivalList = new ArrayList<Request>();
+    //schedule class that will return a Route object, which will contain all the request objects for one van trip
+    public void arrivalSchedule(){
+        System.out.println("Creating a schedule for arrivals and departures!");
+        ArrayList<Request> arrivalList = new ArrayList<Request>();  //use new array to sort the old one
 
-        while(requestList.isEmpty() == false){
-            arrivalList.set(i, requestList.get(i));
-            i++;
-        }
-        i = 0;
-        while(i < (sizeList-1)){
-            if(((arrivalList.get(i)).getDesiredArrival()).getHour() > ((arrivalList.get(i+1)).getDesiredArrival()).getHour()){
-                Request temp = requestList.get(i);
-                requestList.set(i, requestList.get(i+1));
-                requestList.set(i+1, temp);
+        arrivalList.set(0, requestList.get(0));
+        i = 1;
+        while(i<sizeList){  //while arrivalList < requestlist
+            arrivalSize = arrivalList.size();   //measure the size of the arrivalList
+            b = 0;
+            while(b < arrivalSize){   //go through all indexes of arrivalList if necessary
+                aList = (arrivalList.get(b)).getDesiredArrival(); //
+                rList = (requestList.get(i)).getDesiredArrival();
+                if((aList.getDiff(rList)) >= 0){   //if the index's time is before the index being examined, add it to the list
+                    b++;
+                }if ((aList.getDiff(rList))<0){
+                    arrivalList.add(b, requestList.get(i)); //set the current b list with the item from requestList
+                    b = arrivalSize;
+                }
             }i++;
         }
-        //now we have a sorted arrivalList
-
-
-        /*While we're at it, we're going to sort the desiredDeparture times too! */
-        ArrayList<Request> departureList = requestList;
-        i = 0;
-        while(i < sizeList-1){
-            if(((departureList.get(i)).getDesiredDeparture()).getHour() > ((departureList.get(i+1)).getDesiredDeparture()).getHour()){
-                Request temp = requestList.get(i);
-                requestList.set(i, requestList.get(i+1));//not using right array list
-                requestList.set(i+1, temp);
-            }i++;
-        }
+        //now we have a sorted arrivalList with the earliest desiredArrival times at the start of the list
 
         /*ARRIVAL SHUTTLE:
          * We are going to take the first x times while x < 5 and the times are within 30 minutes.
          * Those requests will then be processed for how what their stops are, and figure out the most efficient route.
          */
 
-        int startTime = ((arrivalList.get(0)).getDesiredArrival()).getMinute() + 30; //takes however many rides are within 30 minutes of each other to arrange shuttles.
         i = 0;
-        int cap = 0;
-        ArrayList<Request> trip1 = new ArrayList<Request>();
-        ArrayList<Request> trip2 = new ArrayList<Request>();
-            ArrayList<Request> trip3 = new ArrayList<Request>();
-            while (i < sizeList-1){ //while there are Requests
-                if (cap < 5){   //we want to get requests within 30 minutes of each other
-                    /*what we do is check if the next one is within 30 minutes of the first
-                     *we then need to continue this process while there is still room in the van (5 seats? Variable above)
-                     *create as many van trips as necessary, store each set of requests in a trip as a Route object
-                     */
-                    trip1.add(arrivalList.get(i));
-                    if (((arrivalList.get(i)).getDesiredArrival()).getDiff(((arrivalList.get(i+1)).getDesiredArrival())) < 30){
-                        trip1.add(arrivalList.get(i+1));
-                        i++;
-
-                    }
-
+        int humans = 0;
+        while (i < sizeList){ //while there are Requests
+            if ((humans%5) < 5){   //we want to get requests within 30 minutes of each other
+                Trip2 trip = new Trip2();
+                trip.add(arrivalList(i));
+                if (time of next in array, add it if everything works ){
+                    //if anyone on my team is reading this, I messed something up so this part will be easy to put together, will be done by tomorrow night hopefully
+                    //<3 SJ
+                    //ps. the departure scheduling will be identical to this method, but for departure.  Also easy to throw together.
                 }
-                i++;
+
             }
-            return trip1;
+            }
+            i++;
         }
     }
+}
 

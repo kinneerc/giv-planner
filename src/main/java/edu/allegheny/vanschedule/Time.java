@@ -7,6 +7,10 @@ public class Time {
 
     private int hour;
     private int minute;
+    private int hourB;
+    private int minB;
+    private int minDiff;
+    private int hourDiff;
 
     public Time (int hour, int minute){
         setHour(hour);
@@ -41,10 +45,14 @@ public class Time {
      * @param time the time to compute difference from
      * @return the difference between this time and the input time in minutes
      */
-    public int getDiff(Time time){
-        //getting the difference between the current object and the time of another object
-        //consider changing parameter to taking in an object?
-        return 0;
+    public int getDiff(Time time){  //returns the time difference in minutes
+        //time = t;
+        hourB = time.getHour();
+        minB = time.getMinute();
+        hourDiff = hour - hourB;
+        minDiff = minute - minB;
+        minDiff = hourDiff*60 + minDiff;
+        return minDiff;
     }
 
     public static Time parse(String in){
