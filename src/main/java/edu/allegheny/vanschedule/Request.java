@@ -8,7 +8,6 @@ private Time desiredArrival;
 private Time desiredDeparture;
 private Place site;
 
-public Request(){}
 
 public Request(Place p, Time arrive, Time depart) {
 
@@ -17,13 +16,14 @@ public Request(Place p, Time arrive, Time depart) {
 	site = p;
 
 }
-pulic Request(Place p, Time arrive, Time depart, String Name, String Email){
+public Request(Place p, Time arrive, Time depart, String n, String e){
     desiredArrival = arrive;
     desiredDeparture = depart;
     site = p;
-    name = Name;
-    email = Email;
-
+    name = n;
+    email = e;
+}
+public Request(){
 }
 
 /**
