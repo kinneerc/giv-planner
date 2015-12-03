@@ -19,7 +19,8 @@ public class TestScheduler {
 
 		reqs.add(req1); reqs.add(req2);
 		
-		Route ans = Scheduler.schedule(reqs);
+		Scheduler s = new Scheduler();
+		Route ans = s.schedule(reqs);
 		
 		assertEquals(true,req1.satisfied(ans));
 		assertEquals(true,req2.satisfied(ans));
@@ -43,7 +44,8 @@ public class TestScheduler {
 							new Time(rand.nextInt(11)+12,rand.nextInt(60))));
 		}
 		
-		Route ans = Scheduler.schedule(reqs);
+		Scheduler s = new Scheduler();
+		Route ans = s.schedule(reqs);
 		
 		for (Request r : reqs)
 			assertEquals(true,r.satisfied(ans));
