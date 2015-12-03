@@ -20,16 +20,16 @@ public class VanSchedule {
     public ArrayList schedule(){
         ArrayList<Request> arrivalList = new ArrayList<Request>();
 
-        while(requestList.isEmpty() == FALSE){
-            arrivalList.get(i) = requestList.get(i);
+        while(requestList.isEmpty() == false){
+            arrivalList.set(i, requestList.get(i));
             i++;
         }
         i = 0;
         while(i < (sizeList-1)){
-            if(arrivalList[i].getDesiredArrival() > arrivalList.get(i+1).getDesiredArrival()){
+            if(((arrivalList.get(i)).getDesiredArrival()).getHour() > ((arrivalList.get(i+1)).getDesiredArrival()).getHour()){
                 Request temp = requestList.get(i);
-                requestList.get(i) = requestList.get(i+1);
-                requestList.get(i+1) = temp;
+                requestList.set(i, requestList.get(i+1));
+                requestList.set(i+1, temp);
             }i++;
         }
         //now we have a sorted arrivalList
@@ -39,7 +39,7 @@ public class VanSchedule {
         ArrayList<Request> departureList = requestList;
         i = 0;
         while(i < sizeList-1){
-            if(departureList.get(i).getDesiredDeparture() > departureList.get(i+1).getDesiredDeparture()){
+            if(((departureList.get(i)).getDesiredDeparture()).getHour() > ((departureList.get(i+1)).getDesiredDeparture()).getHour()){
                 Request temp = requestList.get(i);
                 requestList.set(i, requestList.get(i+1));//not using right array list
                 requestList.set(i+1, temp);
@@ -51,7 +51,7 @@ public class VanSchedule {
          * Those requests will then be processed for how what their stops are, and figure out the most efficient route.
          */
 
-        int startTime = arrivalList[0].getDesiredArrival() + 30; //takes however many rides are within 30 minutes of each other to arrange shuttles.
+        int startTime = ((arrivalList.get(0)).getDesiredArrival()).getMinute() + 30; //takes however many rides are within 30 minutes of each other to arrange shuttles.
         i = 0;
         int cap = 0;
         ArrayList<Request> trip1 = new ArrayList<Request>();
@@ -64,7 +64,7 @@ public class VanSchedule {
                      *create as many van trips as necessary, store each set of requests in a trip as a Route object
                      */
                     trip1.add(arrivalList.get(i));
-                    if (arrivalList.get(i).getDesiredArrival.getDiff(arrivalList.get(i+1).getDesiredArrival())< 30){
+                    if (((arrivalList.get(i)).getDesiredArrival()).getDiff(((arrivalList.get(i+1)).getDesiredArrival())) < 30){
                         trip1.add(arrivalList.get(i+1));
                         i++;
 
@@ -73,6 +73,7 @@ public class VanSchedule {
                 }
                 i++;
             }
+            return trip1;
         }
     }
 

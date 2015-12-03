@@ -12,6 +12,7 @@ public class Time {
         setHour(hour);
         setMinute(minute);
     }
+    public Time(){}
 
     public int getHour(){
         return hour;

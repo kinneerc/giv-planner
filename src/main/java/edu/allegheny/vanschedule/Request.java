@@ -2,9 +2,13 @@ package edu.allegheny.vanschedule;
 
 public class Request {
 
+private String name;
+private String email;
 private Time desiredArrival;
 private Time desiredDeparture;
 private Place site;
+
+public Request(){}
 
 public Request(Place p, Time arrive, Time depart) {
 
