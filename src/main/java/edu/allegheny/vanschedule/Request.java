@@ -17,6 +17,14 @@ public Request(Place p, Time arrive, Time depart) {
 	site = p;
 
 }
+pulic Request(Place p, Time arrive, Time depart, String Name, String Email){
+    desiredArrival = arrive;
+    desiredDeparture = depart;
+    site = p;
+    name = Name;
+    email = Email;
+
+}
 
 /**
  * @return the desiredArrival
