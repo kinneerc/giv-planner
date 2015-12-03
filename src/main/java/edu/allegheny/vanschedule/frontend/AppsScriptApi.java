@@ -1,4 +1,5 @@
 package edu.allegheny.vanschedule.frontend;
+import edu.allegheny.vanschedule.Request;
 
 import com.google.api.client.auth.oauth2.Credential;
 import com.google.api.client.extensions.java6.auth.oauth2.AuthorizationCodeInstalledApp;
@@ -21,6 +22,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class AppsScriptApi {
@@ -161,6 +163,25 @@ public class AppsScriptApi {
         return sb.toString();
     }
 
+    /*
+    * listToString
+    * 
+    * @param List<List<String>> list of request for each day
+    * @return String[][] converted from param
+     */
+
+    public static String[][] listToString(List<List<String>> a) {
+
+        String[][] array = new String[a.size()][];
+        for (int i = 0; i < a.size(); i++) {
+            List<String> temp = a.get(i);
+            array[i] = temp.toArray(new String[temp.size()]);
+        }
+
+        return array;
+
+    }
+
     public static void main(String[] args) throws IOException {
         // ID of the script to call. Acquire this from the Apps Script editor,
         // under Publish > Deploy as API executable.
@@ -169,7 +190,7 @@ public class AppsScriptApi {
 
         // Create an execution request object.
         ExecutionRequest request = new ExecutionRequest()
-                .setFunction("getData");
+                .setFunction("getFoldersUnderRoot");
 
         try {
             // Make the API request.
@@ -186,17 +207,34 @@ public class AppsScriptApi {
                 // Script function returns. Here, the function returns
                 // an Apps Script Object with String keys and values,
                 // so must be cast into a Java Map (folderSet).
-                Map<String, String> folderSet =
-                    (Map<String, String>)(op.getResponse().get("result"));
-                if (folderSet.size() == 0) {
-                    System.out.println("No folders returned!");
-                } else {
-                    System.out.println("Folders under your root folder:");
-                    for (String id: folderSet.keySet()) {
-                        System.out.printf(
-                                "\t%s (%s)\n", folderSet.get(id), id);
-                    }
-                }
+
+                // get initial 3d object from script
+                 List<List<List<String>>> rideRequests = (List<List<List<String>>>) (op.getResponse().get("result"));
+                
+                // make each 2d list for each day
+                 List<List<String>> monday = rideRequests.get(0);
+                 List<List<String>> tuesday = rideRequests.get(0);
+                 List<List<String>> wednesday = rideRequests.get(0);
+                 List<List<String>> thursday = rideRequests.get(0);
+                 List<List<String>> friday = rideRequests.get(0);
+
+                // turn each 2d list into 2d array
+                 String[][] mondayArray = listToString(monday);
+                 String[][] tuesdayArray = listToString(tuesday);
+                 String[][] wednesdayArray = listToString(wednesday);
+                 String[][] thursdayArray = listToString(thursday);
+                 String[][] fridayArray = listToString(friday);
+
+                // put the 2d array into 3d array
+                 String[][][] allDays = new String[5][][];
+                 allDays[0] = mondayArray;
+                 allDays[1] = tuesdayArray;
+                 allDays[2] = wednesdayArray;
+                 allDays[3] = thursdayArray;
+                 allDays[4] = fridayArray;
+
+                // call makeDailyRequests on the 3d array of request information 
+                 DailyRequests.makeDailyRequests(allDays);
             }
         } catch (GoogleJsonResponseException e) {
             // The API encountered a problem before the script was called.
