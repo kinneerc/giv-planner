@@ -1,11 +1,17 @@
+package edu.allegheny.vanschedule;
+import java.util.ArrayList;
+
 public class Trip2 extends Stop{
    Time time;
     String name;
     ArrayList<String> peopleList = new ArrayList<String>();
     String email;
-    AraryList<String> emailList = new ArrayList<String>();
+    ArrayList<String> emailList = new ArrayList<String>();
 
-// leaving time from Allegheny
+    public Trip2(Place p){
+        super(p);
+    }
+
     public void setdepartureTime(Time t){
         time = t;
         int hour = time.getHour();

@@ -4,11 +4,16 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Route {
-	
+
 private List<Stop> stops;
 
 public Route(){
 	stops = new ArrayList<Stop>();
+}
+public Route(List<Trip2> t){
+    stops = new ArrayList<Stop>();
+    for(Stop s : t)
+        stops.add(s);
 }
 
 /**
