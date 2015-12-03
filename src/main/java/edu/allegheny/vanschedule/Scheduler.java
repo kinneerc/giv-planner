@@ -2,29 +2,26 @@ package edu.allegheny.vanschedule;
 import java.util.*;
 import java.util.ArrayList;
 public class Scheduler {
-    int i = 0;
-    int b = 0;
-    ArrayList<Request> requestList;
-    int sizeList;
-    int VANSEATS;
-    int arrivalSize;
-    Time aList = new Time();
-    Time rList = new Time();
-    ArrayList<Trip2> tripList = new ArrayList<Trip2>();
+    private static int i = 0;
+    private static int b = 0;
+    private static ArrayList<Request> requestList;
+    private static int sizeList;
+    private static int VANSEATS = 6;
+    private static int arrivalSize;
+    private static Time aList = new Time();
+    private static Time rList = new Time();
+    private static ArrayList<Trip2> tripList = new ArrayList<Trip2>();
 
-
-    public Scheduler(){
-        VANSEATS = 6;
-        sizeList = requestList.size();
-
-    }
     //schedule class that will return a Route object, which will contain all the request objects for one van trip
-    public Route schedule(ArrayList<Request> rl){
+    public static Route schedule(ArrayList<Request> rl){
         requestList = rl;
+        System.out.println(requestList.size());
         System.out.println("Creating a schedule for arrivals and departures!");
         ArrayList<Request> arrivalList = new ArrayList<Request>();  //use new array to sort the old one
-
-        arrivalList.set(0, requestList.get(0));
+        sizeList = arrivalList.size();
+        // arrivalList.set(0, requestList.get(0));
+        arrivalList.add(requestList.get(0));
+        
         i = 1;
         while(i<sizeList){  //while arrivalList < requestlist
             arrivalSize = arrivalList.size();   //measure the size of the arrivalList

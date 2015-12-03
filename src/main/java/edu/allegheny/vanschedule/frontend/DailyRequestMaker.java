@@ -25,9 +25,9 @@ public class DailyRequestMaker {
 	* Then turn each of those array items into Request objects.
 	* Put them all into a list.
 	 */
-	public static List<Request> getDailyRequests(String[][] requests) {
+	public static ArrayList<Request> getDailyRequests(String[][] requests) {
 
-		List<Request> reqs = new ArrayList<Request>();
+		ArrayList<Request> reqs = new ArrayList<Request>();
 
 		// loop through each of the request in the array and make them into
 		// Request objects
