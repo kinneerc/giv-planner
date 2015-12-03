@@ -9,7 +9,7 @@ public class TestTrip {
     public void testGetStart(){
       Place s = new Place("Here");
       Place e = new Place("There");
-      Trip t = new Trip(s,e);
+      Trip t = new Trip(s,e,20);
 
       Place actual = t.getStart();
 
@@ -21,7 +21,7 @@ public class TestTrip {
     public void testSetStart(){
       Place s = new Place("Here");
       Place e = new Place("There");
-      Trip t = new Trip(s,e);
+      Trip t = new Trip(s,e,20);
 
       t.setStart(s);
       Place actual = t.getStart();
