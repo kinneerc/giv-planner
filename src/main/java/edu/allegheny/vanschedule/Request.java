@@ -25,6 +25,12 @@ public Request(Place p, Time arrive, Time depart, String n, String e){
 }
 public Request(){
 }
+public String getName(){
+    return name;
+}
+public String getEmail(){
+    return email;
+}
 
 /**
  * @return the desiredArrival

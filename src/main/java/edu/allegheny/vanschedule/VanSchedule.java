@@ -1,7 +1,7 @@
 package edu.allegheny.vanschedule;
 import java.util.*;
 import java.util.ArrayList;
-public class VanSchedule {
+public class Scheduler {
     int i = 0;
     int b = 0;
     ArrayList<Request> requestList;
@@ -10,15 +10,17 @@ public class VanSchedule {
     int arrivalSize;
     Time aList = new Time();
     Time rList = new Time();
+    ArrayList<Trip> tripList = new ArrayList<Trip>();
 
-    public VanSchedule(ArrayList<Request> RequestList){
+
+    public chedule(ArrayList<Request> RequestList){
         requestList = RequestList;
         VANSEATS = 6;
         sizeList = requestList.size();
 
     }
     //schedule class that will return a Route object, which will contain all the request objects for one van trip
-    public void arrivalSchedule(){
+    public ArrayList<Trip> arrivalSchedule(ArrayList<Request> arrivals){
         System.out.println("Creating a schedule for arrivals and departures!");
         ArrayList<Request> arrivalList = new ArrayList<Request>();  //use new array to sort the old one
 
@@ -46,20 +48,25 @@ public class VanSchedule {
          */
 
         i = 0;
+        b = 0;
         int humans = 0;
-        while (i < sizeList){ //while there are Requests
-            if ((humans%5) < 5){   //we want to get requests within 30 minutes of each other
-                Trip2 trip = new Trip2();
-                trip.add(arrivalList(i));
-                if (time of next in array, add it if everything works ){
-                    //if anyone on my team is reading this, I messed something up so this part will be easy to put together, will be done by tomorrow night hopefully
-                    //<3 SJ
-                    //ps. the departure scheduling will be identical to this method, but for departure.  Also easy to throw together.
-                }
 
-            }
-            }
+        while (i < sizeList){ //while there are Requests
+            Trip2 trip = new Trip2();
+            trip.setDepartureTime((arrivalList.get(i)).getDesiredArrival());
+            trip.addPerson((arrivalList.get(i)).getName());
+            trip.addEmail((arrivalList.get(i)).getEmail());
             i++;
+            while(humans <= VANSEATS){
+                while(((trip.getDepartureTime()).getDiff((arrivalList.get(i)).getDesiredArrival())) <= 15){
+                    trip.addPerson((arrivalList.get(i)).getName());
+                    trip.addEmail((arrivalList.get(i)).getEmail());
+                }
+                humans++;
+                i++;
+            }
+            humans = 0;
+            tripList.add(trip);
         }
     }
 }

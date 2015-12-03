@@ -27,15 +27,13 @@ public class Time {
     }
 
     public void setHour(int hour){
-        // if (hour >= 0 && hour <= 23)
-        //     this.hour = hour;
-        this.hour = hour;
+        if (hour >= 0 && hour <= 23)
+            this.hour = hour;
     }
 
     public void setMinute(int minute){
-        // if (minute >= 0 && minute <= 59)
-        //     this.minute = minute;
-        this.minute = minute;
+        if (minute >= 0 && minute <= 59)
+            this.minute = minute;
     }
 
     //TODO make this work
