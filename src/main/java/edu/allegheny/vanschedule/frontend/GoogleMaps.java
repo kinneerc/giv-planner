@@ -72,10 +72,10 @@ public class GoogleMaps {
     }
     
     public double getTravelTimeDir(Place source, Place dest) throws Exception{
-    	DistanceMatrix matrix = DistanceMatrixApi.getDistanceMatrix(context, new String[] {source.getAddress()}, new String[] {dest.getAddress()}).await();
+    	//DistanceMatrix matrix = DistanceMatrixApi.getDistanceMatrix(context, new String[] {source.getAddress()}, new String[] {dest.getAddress()}).await();
     	//return matrix.rows[0].elements[0].duration.inSeconds / 60.0;
     	// TODO make this do something
-    	return 10;
+    	return 15;
     }
 
 	public PlacesSearchResult getPlace(String string) {

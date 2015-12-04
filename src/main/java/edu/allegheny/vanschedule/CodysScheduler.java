@@ -28,12 +28,94 @@ public class CodysScheduler {
 		// now sort by the desired time
 		Collections.sort(sreqs);	
 		
+		// go through the stops, and check for
+		// when the bus can come back to gheny
+		backTrips(sreqs);
+		
+		// remove redundant stops ina trip
+		removeStops(sreqs);
+		
 		// now convert the requested stops to a route
 		return toRoute(sreqs);
+		
 		
 	}
 	
 	
+
+	private static void removeStops(List<StopRequest> sreqs) {
+		
+		StopRequest at;
+		
+		ArrayList<String> visited = new ArrayList<String>();
+		
+		for(int count = 0; count < sreqs.size()-1; count++){
+			
+			// we are at this place
+			at = sreqs.get(count);
+			
+			// it back at gheny, reset
+			if (at.getSite().name.equals(allegheny.name)){
+				visited = new ArrayList<String>();
+				continue;
+			}
+			
+			// if we've already been here this trip, dont go here again
+			if (visited.contains(at.getSite().name)){
+				sreqs.remove(count);
+				count--;
+			}else{
+				visited.add(at.getSite().name);
+			}
+			
+		}
+		
+	}
+
+
+
+	private static void backTrips(List<StopRequest> sreqs) {
+		
+		final int BACK_TIME = 15; 
+		
+		StopRequest at; 
+		
+		// iterate through stops
+		for(int count = 0; count < sreqs.size()-1; count++){
+			// we are at this place
+			at = sreqs.get(count);
+			// consider if we have time to back to gheny 
+			// and still arrive at the next stop
+			
+			StopRequest next = sreqs.get(count+1);
+			
+			// figure out how much time we have between stops
+			int time = at.getDesiredTime().getDiff(next.getDesiredTime());
+
+			// enough time for back trip?
+			if (time >= BACK_TIME*2){
+				// if there is enough time to go back, then do it
+				Time bt = Time.addMinutes(at.getDesiredTime(),BACK_TIME);
+				StopRequest back = new StopRequest(allegheny,bt);
+				// add to the list
+				sreqs.add(count+1,back);
+				count++;
+			}
+			
+			/*
+			// skip to the next stop if the next stop is allegheny
+			if (next.getSite().name.equals(allegheny.name)){
+				count++;
+				continue;
+			}
+			*/
+			
+			
+		}
+		
+	}
+
+
 
 	private static Route toRoute(List<StopRequest> sreqs) {
 		
