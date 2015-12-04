@@ -75,7 +75,11 @@ public void setSite(Place site) {
 }
 
 public boolean satisfied(Route route) {
-	// TODO Auto-generated method stub
+	for (Stop s : route.getStops()){
+		if (s.getName().equals(site.getName())){
+			return true;
+		}
+	}
 	return false;
 }
 
