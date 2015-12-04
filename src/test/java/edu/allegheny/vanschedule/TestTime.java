@@ -144,6 +144,34 @@ public class TestTime {
         assertEquals(-1,a.getHour());
         assertEquals(-1,a.getMinute());
 
+    }
+
+    @Test
+    public void testToString(){
+        Time time = new Time(10,5);
+
+        String actual = "";
+        String expected = "";
+
+
+        actual = time.toString();
+        expected = "10:05";
+
+        assertEquals(actual,expected);
+
+
+        time = new Time(8,55);
+        actual = time.toString();
+        expected = "08:55";
+
+        assertEquals(actual,expected);
+
+
+        time = new Time(00,11);
+        actual = time.toString();
+        expected = "00:11";
+
+        assertEquals(actual,expected);
 
     }
 
