@@ -56,5 +56,10 @@ public class Time {
     public static Time parse(String in){
         return new Time(0,0);
     }
+    
+	@Override
+	public String toString(){
+		return hour + ":" + minute;
+	}
 
 }

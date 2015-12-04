@@ -24,5 +24,14 @@ public class Stop extends Place {
     public Time getDeparture(){
         return departure;
     }
+    
+    @Override
+    public String toString(){
+    	
+    	String ans = arrival + " " + getName() + " " + departure;
+    	
+		return ans;
+    	
+    }
 
 }

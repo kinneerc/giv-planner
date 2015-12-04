@@ -2,7 +2,7 @@ package edu.allegheny.vanschedule;
 
 public class Place {
 
-    private String name;
+    protected String name;
     private String address;
 
     public Place(String name){
