@@ -22,6 +22,10 @@ public class GoogleMaps {
     
     private DistanceMatrix ans;
 
+    public GoogleMaps(){
+    	context = new GeoApiContext().setApiKey(apiKey);
+    }
+    
     public GoogleMaps(List<Place> places) throws Exception{
         context = new GeoApiContext().setApiKey(apiKey);
         this.places = places;
@@ -65,6 +69,11 @@ public class GoogleMaps {
     
     public DistanceMatrix callGMaps(String[] origins) throws Exception{
         return DistanceMatrixApi.getDistanceMatrix(context, origins, origins).await(); 
+    }
+    
+    public double getTravelTimeDir(Place source, Place dest) throws Exception{
+    	DistanceMatrix matrix = DistanceMatrixApi.getDistanceMatrix(context, new String[] {source.getAddress()}, new String[] {dest.getAddress()}).await();
+    	return matrix.rows[0].elements[0].duration.inSeconds / 60.0;
     }
     
     // testing purposes only
