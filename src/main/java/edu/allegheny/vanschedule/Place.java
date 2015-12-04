@@ -7,6 +7,7 @@ public class Place {
 
     public Place(String name){
         this.name = name;
+        this.address = name + ", Meadville PA";
     }
 
     public String getName(){
@@ -19,6 +20,10 @@ public class Place {
 
     public void setAddress(String address){
         this.address = address;
+    }
+    
+    public static Place getAllegheny(){
+    	return new Place("Allegheny College");
     }
 
 }

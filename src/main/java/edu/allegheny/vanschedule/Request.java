@@ -74,23 +74,39 @@ public void setSite(Place site) {
 	this.site = site;
 }
 
-public boolean satisfied(Route route) {
+private Stop findStop(Route route){
 	for (Stop s : route.getStops()){
 		if (s.getName().equals(site.getName())){
-			return true;
+			return s;
 		}
 	}
-	return false;
+	return null;
+}
+
+public boolean satisfied(Route route) {
+	Stop s = findStop(route);
+	if (s != null)
+		return true;
+	else
+		return false;
 }
 
 public int waitTime(Route route){
-	// TODO Auto-gen
-	return Integer.MAX_VALUE;
+	Stop s = findStop(route);
+	int diff = -desiredArrival.getDiff(s.getArrival());
+	if (diff >= 0)
+		return diff;
+	else
+		return 0; 
 }
 
 public int lateTime(Route route){
-	// TODO Auto-gen
-	return Integer.MAX_VALUE;
+	Stop s = findStop(route);
+	int diff = desiredArrival.getDiff(s.getArrival());
+	if (diff >= 0)
+		return diff;
+	else
+		return 0; 
 }
 
 

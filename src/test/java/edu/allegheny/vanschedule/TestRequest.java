@@ -123,11 +123,11 @@ public class TestRequest {
       
       assertEquals(0,r.waitTime(route));
       
-      a.setMinute(10);
+      s.setArrival(new Time(10,10));
       
       assertEquals(10,r.waitTime(route));
       
-      a.setMinute(30);
+      s.setArrival(new Time(10,30));
       
       assertEquals(0,r.waitTime(route));
       
@@ -151,11 +151,11 @@ public class TestRequest {
       
       assertEquals(0,r.lateTime(route));
       
-      a.setMinute(10);
+      s.setArrival(new Time(10,10));
       
       assertEquals(0,r.lateTime(route));
       
-      a.setMinute(30);
+      s.setArrival(new Time(10,30));
       
       assertEquals(10,r.lateTime(route));
       

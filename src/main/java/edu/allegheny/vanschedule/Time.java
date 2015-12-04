@@ -50,7 +50,7 @@ public class Time {
         hourDiff = hour - hourB;
         minDiff = minute - minB;
         minDiff = hourDiff*60 + minDiff;
-        return minDiff;
+        return -minDiff;
     }
 
     public static Time parse(String in){
