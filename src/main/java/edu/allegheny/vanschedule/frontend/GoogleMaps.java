@@ -33,7 +33,7 @@ public class GoogleMaps {
         ans = callGMaps(getPlaceList());
         
     }
-    
+        
     /**
      * Get the travel time between two places
      * @param source Place
@@ -73,8 +73,27 @@ public class GoogleMaps {
     
     public double getTravelTimeDir(Place source, Place dest) throws Exception{
     	DistanceMatrix matrix = DistanceMatrixApi.getDistanceMatrix(context, new String[] {source.getAddress()}, new String[] {dest.getAddress()}).await();
-    	return matrix.rows[0].elements[0].duration.inSeconds / 60.0;
+    	//return matrix.rows[0].elements[0].duration.inSeconds / 60.0;
+    	// TODO make this do something
+    	return 10;
     }
+
+	public PlacesSearchResult getPlace(String string) {
+		
+	    TextSearchRequest tsr = PlacesApi.textSearchQuery(context, string);
+	    PlacesSearchResponse psr;
+		try {
+			psr = tsr.await();
+			return psr.results[0];
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		return null;
+	    
+	    
+	}
     
     // testing purposes only
     /*

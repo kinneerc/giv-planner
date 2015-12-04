@@ -13,8 +13,8 @@ public class Scheduler {
     private static ArrayList<Trip2> tripList = new ArrayList<Trip2>();
 
     //schedule class that will return a Route object, which will contain all the request objects for one van trip
-    public static Route schedule(ArrayList<Request> rl){
-        requestList = rl;
+    public static Route schedule(List<Request> rl){
+        requestList = new ArrayList<Request>(rl);
         System.out.println(requestList.size());
         System.out.println("Creating a schedule for arrivals and departures!");
         ArrayList<Request> arrivalList = new ArrayList<Request>();  //use new array to sort the old one
@@ -23,7 +23,7 @@ public class Scheduler {
         arrivalList.add(requestList.get(0));
         
         i = 1;
-        while(i<sizeList){  //while arrivalList < requestlist
+        while(i<sizeList){  //while arrivalList < requestList
             arrivalSize = arrivalList.size();   //measure the size of the arrivalList
             b = 0;
             while(b < arrivalSize){   //go through all indexes of arrivalList if necessary

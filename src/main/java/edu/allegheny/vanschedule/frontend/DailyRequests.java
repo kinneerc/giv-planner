@@ -35,7 +35,9 @@ public class DailyRequests {
 		// List<Request> friday = DailyRequestMaker.getDailyRequests(allDayReqs[4]);
 
 		// call backend
-		Route mondayRoute = Scheduler.schedule(monday);
+		Route mondayRoute = CodysScheduler.schedule(monday);
+		
+		System.out.println(mondayRoute);
 
 	} // makeDailyRequests
 

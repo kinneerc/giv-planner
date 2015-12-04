@@ -28,7 +28,15 @@ public class Stop extends Place {
     @Override
     public String toString(){
     	
-    	String ans = arrival + " " + getName() + " " + departure;
+    	String address;
+    	
+    	if ((address = getAddress()) == null)
+    		address = getName();
+    	else 
+    		address = getName() + " : " + address;
+    	
+    	
+    	String ans = arrival + " " + address + " " + departure;
     	
 		return ans;
     	

@@ -1,13 +1,21 @@
 package edu.allegheny.vanschedule;
 
+import com.google.maps.model.PlacesSearchResult;
+
+import edu.allegheny.vanschedule.frontend.GoogleMaps;
+
 public class Place {
 
+	private static GoogleMaps gmaps = new GoogleMaps();
+	
+	public static final Place ALLEGHENY = new Place("Allegheny College"); 
+	
     protected String name;
-    private String address;
+    protected PlacesSearchResult psr;
 
     public Place(String name){
         this.name = name;
-        this.address = name + ", Meadville PA";
+        psr = gmaps.getPlace(name + ", Meadville PA");
     }
 
     public String getName(){
@@ -15,15 +23,11 @@ public class Place {
     }
 
     public String getAddress(){
-        return address;
-    }
-
-    public void setAddress(String address){
-        this.address = address;
+        return psr.formattedAddress;
     }
     
     public static Place getAllegheny(){
-    	return new Place("Allegheny College");
+    	return ALLEGHENY;
     }
 
 }
