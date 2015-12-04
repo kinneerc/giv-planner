@@ -34,4 +34,15 @@ public void addStop(Stop stop){
 	stops.add(stop);
 }
 
+@Override
+public String toString(){
+	String ans = "";
+	
+	for (Stop s : stops){
+		ans += s + "\n";
+	}
+	
+	return ans;
+}
+
 }
