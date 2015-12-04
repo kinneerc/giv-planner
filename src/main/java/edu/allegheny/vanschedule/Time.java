@@ -5,8 +5,13 @@ package edu.allegheny.vanschedule;
  */
 public class Time {
 
+	private int minutes;
+	
     private int hour;
+    
     private int minute;
+    
+    
     private int hourB;
     private int minB;
     private int minDiff;
@@ -27,13 +32,32 @@ public class Time {
     }
 
     public void setHour(int hour){
-        if (hour >= 0 && hour <= 23)
+        if (hour >= 0 && hour <= 23){
             this.hour = hour;
+            this.minutes = minute + 60 * hour;
+        }
     }
 
     public void setMinute(int minute){
-        if (minute >= 0 && minute <= 59)
+        if (minute >= 0 && minute <= 59){
             this.minute = minute;
+            this.minutes = minute + hour * 60;
+        }
+    }
+    
+    public void addMinutes(int mins){
+    	
+    	minutes += mins;
+    	
+    	hour = minutes / 60;
+    	minute = minutes % 60;
+    	
+    }
+    
+    public static Time addMinutes(Time t, int mins){
+    	Time nt = t.clone();
+    	nt.addMinutes(mins);
+    	return nt;
     }
 
     //TODO make this work
@@ -45,12 +69,15 @@ public class Time {
      */
     public int getDiff(Time time){  //returns the time difference in minutes
         //time = t;
+    	/*
         hourB = time.getHour();
         minB = time.getMinute();
         hourDiff = hour - hourB;
         minDiff = minute - minB;
         minDiff = hourDiff*60 + minDiff;
         return -minDiff;
+        */
+    	return time.minutes - minutes;
     }
 
     /*
@@ -62,6 +89,12 @@ public class Time {
 	* Take a string representation of a time. 
 	* Return it as a Time object.
 	 */
+    
+    public Time clone() {
+    	
+    	return new Time(hour,minute);
+   
+    }
 	
 	public static Time parse(String t) {
 		String[] initial = t.split("\\s+");
