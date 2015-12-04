@@ -139,6 +139,12 @@ public class TestTime {
         assertEquals(55,a.getMinute());
 
 
+        a = Time.parse("");
+
+        assertEquals(-1,a.getHour());
+        assertEquals(-1,a.getMinute());
+
+
     }
 
 
