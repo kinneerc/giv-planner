@@ -33,7 +33,14 @@ public class CodysScheduler {
 		backTrips(sreqs);
 		
 		// remove redundant stops ina trip
+		// TODO, enforce max 6 people limit
 		removeStops(sreqs);
+		
+		// TODO SJ optional
+		fixSamePlaceSameTime(sreqs);
+		
+		// TODO fix allegheny college departure times
+		
 		
 		// now convert the requested stops to a route
 		return toRoute(sreqs);
@@ -42,6 +49,13 @@ public class CodysScheduler {
 	}
 	
 	
+
+	private static void fixSamePlaceSameTime(List<StopRequest> sreqs) {
+		// TODO SJs method
+		
+	}
+
+
 
 	private static void removeStops(List<StopRequest> sreqs) {
 		
