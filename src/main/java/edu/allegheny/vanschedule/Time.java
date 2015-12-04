@@ -146,7 +146,13 @@ public class Time {
     
 	@Override
 	public String toString(){
-		return hour + ":" + minute;
+		String hourS = hour + "";
+		String minS = minute + "";
+		if (hour < 10)
+			hourS = "0"+hour;
+		if(minute < 10)
+			minS = "0"+minute;
+		return hourS + ":" + minS;
 	}
 
 }
