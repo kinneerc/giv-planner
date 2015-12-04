@@ -23,6 +23,7 @@ public class CodysScheduler {
 		}
 		
 		// break requests down into the requested stops
+		// TODO SJ, modify StopRequest to hold info Brandon needs
 		List<StopRequest> sreqs = getStopRequests(reqs);
 		
 		// now sort by the desired time
@@ -144,6 +145,7 @@ public class CodysScheduler {
 		
 		for (StopRequest sr : sreqs){
 			
+			// TODO SJ, add brandons info here
 			r.addStop(sr.toStop());
 			
 		}
