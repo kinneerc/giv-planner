@@ -29,4 +29,16 @@ public class TestTrip {
       assertEquals(s.getName(), actual.getName());
 
     }
+
+    @Test
+    public void testGetTravelTime(){
+      Place s = new Place("Here");
+      Place e = new Place("There");
+      Trip t = new Trip(s,e,20);
+
+      double actual = t.getTravelTime();
+
+      assertEquals(actual,Double.MAX_VALUE);
+
+    }
 }
