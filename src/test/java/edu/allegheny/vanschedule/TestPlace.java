@@ -16,12 +16,19 @@ public class TestPlace {
     	Place p = new Place("1st District");
     	assertEquals("1st District",p.getName());
     }
-/*
-    @Test 
+
+    @Test
     public void testGetAddress(){
     	Place p = new Place("Test Place");
-    	assertEquals("11ws Wallaby Lane",p.getAddress());
+    	assertEquals("Test Place, Meadville PA",p.getAddress());
     }
-    */
+
+    @Test
+    public void testGetAllegheny(){
+    	Place p = new Place("Test Place");
+      Place allegheny = p.getAllegheny();
+
+    	assertEquals("Allegheny College",allegheny.getName());
+    }
 
 }
