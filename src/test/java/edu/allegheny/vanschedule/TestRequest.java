@@ -6,6 +6,56 @@ import static org.junit.Assert.assertEquals;
 public class TestRequest {
 
     @Test
+    public void testRequest(){
+      Place p = new Place("2nd District");
+      Time a = new Time(10,20);
+      Time d = new Time(12,30);
+      Request r = new Request(p,a,d,"Name","name@test.edu");
+
+    }
+
+    @Test
+    public void testNextRequest(){
+      Request r = new Request();
+
+    }
+
+    @Test
+    public void testGetName(){
+      Place p = new Place("2nd District");
+      Time a = new Time(10,20);
+      Time d = new Time(12,30);
+
+      Request r = new Request(p,a,d,"Name","name@test.edu");
+      String actual = r.getName();
+      assertEquals("Name", actual);
+
+      r = new Request(p,a,d,"Name LastName","name@test.edu");
+      actual = r.getName();
+      assertEquals("Name LastName", actual);
+
+    }
+
+    @Test
+    public void testGetEmail(){
+      Place p = new Place("2nd District");
+      Time a = new Time(10,20);
+      Time d = new Time(12,30);
+
+      Request r = new Request(p,a,d,"Name","name@test.edu");
+      String actual = r.getEmail();
+      assertEquals("name@test.edu", actual);
+
+      r = new Request(p,a,d,"Name","name_lastname@test.edu");
+      actual = r.getEmail();
+      assertEquals("name_lastname@test.edu", actual);
+
+      r = new Request(p,a,d,"Name","name_lastname.morenames@test.edu");
+      actual = r.getEmail();
+      assertEquals("name_lastname.morenames@test.edu", actual);
+    }
+
+    @Test
     public void testGetDesiredArrival(){
       Place p = new Place("2nd District");
       Time a = new Time(10,20);
