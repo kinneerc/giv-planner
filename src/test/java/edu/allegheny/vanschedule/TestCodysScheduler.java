@@ -7,7 +7,7 @@ import java.util.Random;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestScheduler {
+public class TestCodysScheduler {
 
 	@Test
 	public void testSchedule(){
