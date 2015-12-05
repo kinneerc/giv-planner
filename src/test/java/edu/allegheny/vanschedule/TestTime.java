@@ -68,6 +68,66 @@ public class TestTime {
 
     }
 
+    @Test
+    public void testAddMinutes(){
+        Time time = new Time(1,23);
+
+        time.addMinutes(5);
+        Time expected = new Time(1,28);
+
+        assertEquals(expected.getMinute(), time.getMinute());
+
+        time = new Time(1,59);
+
+        time.addMinutes(2);
+        expected = new Time(2,01);
+
+        assertEquals(expected.getMinute(), time.getMinute());
+
+        time = new Time(23,59);
+
+        time.addMinutes(2);
+        expected = new Time(00,01);
+
+        assertEquals(expected.getMinute(), time.getMinute());
+
+    }
+
+    @Test
+    public void testOtherAddMinutes(){
+        Time time = new Time(1,23);
+
+        Time actual = time.addMinutes(time, 5);
+        Time expected = new Time(1,28);
+
+        assertEquals(expected.getMinute(), actual.getMinute());
+
+        time = new Time(1,59);
+
+        actual = time.addMinutes(time,2);
+        expected = new Time(2,01);
+
+        assertEquals(expected.getMinute(), actual.getMinute());
+
+        time = new Time(23,59);
+
+        actual = time.addMinutes(time,2);
+        expected = new Time(00,01);
+
+        assertEquals(expected.getMinute(), actual.getMinute());
+
+    }
+
+    @Test
+    public void testClone(){
+        Time time = new Time(23,59);
+
+        Time actual = time.clone();
+        assertEquals(actual.getHour(), time.getHour());
+        assertEquals(actual.getMinute(), time.getMinute());
+
+    }
+
     @Test 
     public void testGetDiff(){
 
