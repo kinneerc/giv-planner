@@ -44,6 +44,10 @@ public class Trip2 extends Stop{
         emailList.add(email);
     }
 
+    public ArrayList<String> getEmailList(){
+        return emailList;
+    }
+
 // arrival time at destinations
 // destination
 
