@@ -126,8 +126,7 @@ ______
 # License
 ______
 
-## [GNU General Public License
-v3.0](https://raw.githubusercontent.com/kinneerc/giv-planner/master/LICENSE?token=AFShGG2RnNTW6ARDo5z4iz-d6RNIswD3ks5Wbj-AwA%3D%3D)
+## [GNU General Public License v3.0](https://raw.githubusercontent.com/kinneerc/giv-planner/master/LICENSE?token=AFShGG2RnNTW6ARDo5z4iz-d6RNIswD3ks5Wbj-AwA%3D%3D)
 
 The GNU General Public License is a free, copyleft license for software
 and other kinds of works.
