@@ -2,6 +2,7 @@ package edu.allegheny.vanschedule;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 
 import edu.allegheny.vanschedule.frontend.GoogleMaps;
@@ -60,9 +61,18 @@ public class CodysScheduler {
 
 	private static void removeStops(List<StopRequest> sreqs) {
 		
-		StopRequest at;
+		// add allegheny stops first to propagate name/email lists
+		try {
+			addAlleghenyStartEnd(sreqs);
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		
-		ArrayList<String> visited = new ArrayList<String>();
+		HashMap<String,StopRequest> visited = new HashMap<String,StopRequest>();
+		
+		StopRequest gheny = null;
+		StopRequest at;
 		
 		for(int count = 0; count < sreqs.size()-1; count++){
 			
@@ -71,16 +81,27 @@ public class CodysScheduler {
 			
 			// it back at gheny, reset
 			if (at.getSite().name.equals(allegheny.name)){
-				visited = new ArrayList<String>();
+				gheny = at;
+				visited = new HashMap<String,StopRequest>();
 				continue;
 			}
 			
+			// if this is an arrival stop, add them to the gheny list
+			if (at.isCanBeEarly()){
+				gheny.getPeople().addAll(at.getPeople());
+				gheny.getEmails().addAll(at.getEmails());
+			}
+			
 			// if we've already been here this trip, dont go here again
-			if (visited.contains(at.getSite().name)){
+			// delete the stop and first stop takes all of the old names / emails
+			if (visited.keySet().contains(at.getSite().name)){
+				StopRequest first = visited.get(at.getSite().name);
+				first.getPeople().addAll(at.getPeople());
+				first.getEmails().addAll(at.getEmails());
 				sreqs.remove(count);
 				count--;
 			}else{
-				visited.add(at.getSite().name);
+				visited.put(at.getSite().name, at);
 			}
 			
 		}
@@ -135,13 +156,6 @@ public class CodysScheduler {
 	private static Route toRoute(List<StopRequest> sreqs) {
 		
 		Route r = new Route();
-		
-		try {
-			addAlleghenyStartEnd(sreqs);
-		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		
 		for (StopRequest sr : sreqs){
 			
