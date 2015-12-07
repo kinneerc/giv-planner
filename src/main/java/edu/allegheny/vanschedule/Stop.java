@@ -1,12 +1,36 @@
 package edu.allegheny.vanschedule;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Stop extends Place {
 
     private Time arrival;
     private Time departure;
+    
+    private List<String> people;
+    private List<String> emails;
 
-    public Stop(Place p){
+    public List<String> getPeople() {
+		return people;
+	}
+
+	public void setPeople(List<String> people) {
+		this.people = people;
+	}
+
+	public List<String> getEmails() {
+		return emails;
+	}
+
+	public void setEmails(List<String> emails) {
+		this.emails = emails;
+	}
+
+	public Stop(Place p){
         super(p.getName());
+        this.emails = new ArrayList<String>();
+        this.people = new ArrayList<String>();
     }
 
     public void setArrival(Time arrival){
