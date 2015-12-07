@@ -1,3 +1,6 @@
+# Gimp files
+*.xcf
+
 *.swp
 
 *.class
