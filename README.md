@@ -44,7 +44,9 @@ below:
 tag](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/zip.png?token=AFShGHuvKKjpAhdVFgd5cGK_qN4TeiTEks5WbjC-wA%3D%3D)
 
 Downloading the ZIP will place `giv-planner-master.zip` in your
-`Downloads/` folder. See the image located directly below. _Note: This
+`Downloads/` folder. See the image located directly below.
+
+_Note: This
 example was taken on a Mac, your file system may look different than the
 example._
 
@@ -54,7 +56,9 @@ tag](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/downlo
 After downloading the ZIP to your local machine, you will need to
 "unzip" the ZIP. You can do this simple by a *double-click* on the ZIP.
 In doing so, an unzipped folder will appear---displayed in the figure
-below. _Note: This
+below.
+
+_Note: This
 example was taken on a Mac, your file system may look different than the
 example. Also, unzipping a file may require a different process in a
 different operating system._
@@ -63,5 +67,43 @@ different operating system._
 ![alt
 tag](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/unzip.png?token=AFShGAKYvj80_hhNVdrGyNFhQgx2b6Ydks5WbjVFwA%3D%3D)
 
+# Preparation
+______
+## Overview
++ Relocate **GIV-planner**
++ Launch Terminal or Command Prompt
++ Change into `giv-planner-master` directory
+
+### Relocating **GIV-planner**
+While in your `Downloads/` directory, highlight the **unzipped** `giv-planner-master`
+and then **drag-and-drop** to the new location where you would like to
+be able to access the tool in the future.
+
+### Launch Terminal or Command Prompt
+______
+Our system, in its current state, requires you to use the
+Terminal (OSX, Linux) or Command Prompt (Windows).
+Launching the Terminal/Command Prompt will put you in your home directory.
+After launching Terminal/Command Prompt, you will need to navigate to
+the `giv-planner-master` directory. This will depend on where you chose
+to relocate the tool in the previous step.
+
+### Change Directory
+You will need to navigate
+your file system using the following command until you are able to locate the
+`giv-planner-master` directory.
+
+The following command is the
+`cd <folder_name/to/giv-planner-master>` command or **Change Directory** command:
+
+```
+cd <folder_name/path/to/giv-planner-master>
+```
+
+Once you are in the `giv-planner-master` directory, give yourself a pat
+on the back before moving to the next section, you are on your way to
+becoming a computer expert hacking away in the Terminal/Command Prompt.
+
 # Usage
 ______
+
