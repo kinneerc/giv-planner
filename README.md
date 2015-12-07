@@ -36,7 +36,7 @@ Downloading the
 Downloading the `ZIP` is mostly meant for people who just want to get the
 tool and not make changes.
 
-To download the `ZIP`, _click_ the *Download ZIP* button displayed
+To download the `ZIP`, *click* the *Download ZIP* button displayed
 below:
 
 ![alt
