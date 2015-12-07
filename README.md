@@ -40,7 +40,7 @@ To download the `ZIP`, _click_ the *Download ZIP* button displayed
 below:
 
 ![alt
-tag](https://raw.github.com/username/projectname/branch/path/to/img.png)
+tag](https://raw.githubusercontent.com/kinneerc/van-schedule/master/images/zip.png?token=AFShGIuWUPPK0BjysxcjIk97jkgJv4qfks5WbiK8wA%3D%3D)
 
 
 
