@@ -164,7 +164,36 @@ public class CodysScheduler {
 			
 		}
 		
+		adjustAlleghenyTimes(r);
+		
 		return r;
+	}
+
+
+
+	// Bus should wait at allegheny until its time to get to the next stop
+	private static void adjustAlleghenyTimes(Route r) {
+		
+		List<Stop> stops = r.getStops();
+		
+		for (int count = 0; count < stops.size()-1; count++){
+			Stop cur = stops.get(count);
+			// if we are at allegheny, dont leave until we need to
+			if (cur.getName().equals(allegheny.getName())){
+				// look ahead to see when we need to be at the next stop
+				Stop next = stops.get(count+1);
+				
+				int diff = cur.getDeparture().getDiff(next.getArrival());
+				
+				// if we have more than 15 min, then we'll wait
+				if (diff > 15){
+					cur.getDeparture().addMinutes(diff-15);
+				}
+				
+			}
+		}
+		
+		
 	}
 
 
