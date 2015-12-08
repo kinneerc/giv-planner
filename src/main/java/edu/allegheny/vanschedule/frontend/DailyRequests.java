@@ -36,8 +36,8 @@ public class DailyRequests {
 
 		// call backend
 		Route mondayRoute = CodysScheduler.schedule(monday);
-		
-		System.out.println(mondayRoute);
+		TripGrouping.groupStops(mondayRoute);
+		//System.out.println(mondayRoute);
 
 	} // makeDailyRequests
 
