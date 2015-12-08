@@ -95,27 +95,36 @@ public class GoogleCalendar {
                 .setApplicationName(APPLICATION_NAME)
                 .build();
     }
+      public static void clearCalendar() throws IOException{
+          com.google.api.services.calendar.Calendar service =
+                  getCalendarService();
+              
+           // Clear a calendar
+              service.calendars().clear("shuttlevanschedule@gmail.com").execute();
+      }
 
-//    public static void main(String[] args) throws IOException {
-      public static void addToCalendar(String summary, String location, String[] beginTime, String[] endTime) throws IOException {
+      public static void addToCalendar(String summary, String location, String[] beginTime, String[] endTime, String[] dateRelative) throws IOException {
         // Build a new authorized API client service.
         // Note: Do not confuse this class with the
         //   com.google.api.services.calendar.model.Calendar class.
         com.google.api.services.calendar.Calendar service =
             getCalendarService();
         
+        System.out.println("Date: " + dateRelative[2]);
+     
+        // Code to create events
         Event event = new Event()
         	    .setSummary(summary)
         	    .setLocation(location)
         	    .setDescription(summary);
 
-        	DateTime startDateTime = new DateTime("2015-12-07T" + beginTime[0] + ":" + beginTime[1] + ":00-05:00");
+        	DateTime startDateTime = new DateTime(dateRelative[0] + "-" + dateRelative[1] + "-" + dateRelative[2] + "T" + beginTime[0] + ":" + beginTime[1] + ":00-05:00");
         	EventDateTime start = new EventDateTime()
         	    .setDateTime(startDateTime)
         	    .setTimeZone("America/New_York");
         	event.setStart(start);
 
-        	DateTime endDateTime = new DateTime("2015-12-07T" + endTime[0] + ":" + endTime[1] + ":00-05:00");
+        	DateTime endDateTime = new DateTime(dateRelative[0] + "-" + dateRelative[1] + "-" + dateRelative[2] + "T" + endTime[0] + ":" + endTime[1] + ":00-05:00");
         	EventDateTime end = new EventDateTime()
         	    .setDateTime(endDateTime)
         	    .setTimeZone("America/New_York");

@@ -232,7 +232,9 @@ public class AppsScriptApi {
                  allDays[2] = wednesdayArray;
                  allDays[3] = thursdayArray;
                  allDays[4] = fridayArray;
-
+                 
+                 // clear original calendar events
+                 GoogleCalendar.clearCalendar();
                 // call makeDailyRequests on the 3d array of request information 
                  DailyRequests.makeDailyRequests(allDays);
             }

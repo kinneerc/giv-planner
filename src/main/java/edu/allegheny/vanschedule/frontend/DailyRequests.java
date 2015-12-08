@@ -6,6 +6,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.util.Date;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 
 
 /*
@@ -29,9 +30,7 @@ public class DailyRequests {
 	 */
 
 	public static void makeDailyRequests(String[][][] allDayReqs) {
-		
-		System.out.println(printDate());
-		
+			
 		// make a list of requests for each day of the week
 		ArrayList<Request> monday = DailyRequestMaker.getDailyRequests(allDayReqs[0]);
 		ArrayList<Request> tuesday = DailyRequestMaker.getDailyRequests(allDayReqs[1]);
@@ -49,13 +48,43 @@ public class DailyRequests {
 
 		// call the remaining front end code
 		// this will add calendar events for each day route
-		TripGrouping.groupStops(mondayRoute);
-		TripGrouping.groupStops(tuesdayRoute);
-		TripGrouping.groupStops(wednesdayRoute);
-		TripGrouping.groupStops(thursdayRoute);
-		TripGrouping.groupStops(fridayRoute);
+		
+		String date = printDate();
+		int day = getDay();
+
+		String[] mondayDate = GetMonday.findDate(date,day);
+		TripGrouping.groupStops(mondayRoute,mondayDate);
+		String[] tuesdayDate = GetMonday.getNextDay(mondayDate,1);
+		TripGrouping.groupStops(tuesdayRoute,tuesdayDate);
+		String[] wednesdayDate = GetMonday.getNextDay(mondayDate,1);
+		TripGrouping.groupStops(wednesdayRoute,wednesdayDate);
+		String[] thursdayDate = GetMonday.getNextDay(mondayDate,1);
+		TripGrouping.groupStops(thursdayRoute,thursdayDate);
+		String[] fridayDate = GetMonday.getNextDay(mondayDate,1);
+		TripGrouping.groupStops(fridayRoute,fridayDate);
 
 	} // makeDailyRequests
+	
+	/*
+	 * @return int
+	 * 
+	 * Gets day of the week in int form
+	 */
+	
+	public static int getDay() {
+	    Date date = new Date();
+	    SimpleDateFormat ft = new SimpleDateFormat("yyyy-MM-dd");
+		Calendar c = Calendar.getInstance();
+		c.setTime(date);
+		int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+		return dayOfWeek;
+	}
+	
+	/*
+	 * @return String
+	 * 
+	 * Method to get string date format
+	 */
 	
 	public static String printDate() {
 	    Date date = new Date();

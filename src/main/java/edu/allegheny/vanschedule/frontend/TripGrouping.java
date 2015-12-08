@@ -16,7 +16,7 @@ public class TripGrouping {
 	 * list of stops that are grouped by trip
 	 */
 	
-	public static void groupStops(Route r) {
+	public static void groupStops(Route r,String[] dateRelative) {
 		
 		List<Stop> s = r.getStops();
 		
@@ -55,7 +55,7 @@ public class TripGrouping {
 					
 					System.out.println("\n\n");
 					// call the createEvents() with each individual trip list
-					CreateCalendarEvents.createEvents(tripSingle);
+					CreateCalendarEvents.createEvents(tripSingle,dateRelative);
 				} // if allegheny college
 			} // else
 				//System.out.println();

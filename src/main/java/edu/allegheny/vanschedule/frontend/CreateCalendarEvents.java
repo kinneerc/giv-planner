@@ -14,7 +14,7 @@ public class CreateCalendarEvents {
 	 * to make summary, arrival time and depart time
 	 * Then calls googlecalendarapi
 	 */
-	public static void createEvents(List<Stop> s) {
+	public static void createEvents(List<Stop> s, String[] dateRelative) {
 		String summary = makeSummary(s);
 		//System.out.println(summary);
 		String location = getLocation(s);
@@ -25,7 +25,7 @@ public class CreateCalendarEvents {
 		//System.out.println(depart[0] + " " + depart[1]);
 		
 		try {
-			GoogleCalendar.addToCalendar(summary,location,arrival,depart);
+			GoogleCalendar.addToCalendar(summary,location,arrival,depart,dateRelative);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
