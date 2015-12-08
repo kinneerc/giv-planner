@@ -96,7 +96,8 @@ public class GoogleCalendar {
                 .build();
     }
 
-    public static void main(String[] args) throws IOException {
+//    public static void main(String[] args) throws IOException {
+      public static void addToCalendar(String summary, String location, String[] beginTime, String[] endTime) throws IOException {
         // Build a new authorized API client service.
         // Note: Do not confuse this class with the
         //   com.google.api.services.calendar.model.Calendar class.
@@ -104,17 +105,17 @@ public class GoogleCalendar {
             getCalendarService();
         
         Event event = new Event()
-        	    .setSummary("To " + "Active Aging" + ": " + "Brandon Ginoza, Almog Buenos, SJ Guilame, Colton McCurrdy, Cody Kinneer")
-        	    .setLocation("Active Aging")
-        	    .setDescription("Trip to: " + "Active Aging");
+        	    .setSummary(summary)
+        	    .setLocation(location)
+        	    .setDescription(summary);
 
-        	DateTime startDateTime = new DateTime("2015-12-07T" + "08" + ":" + "43" + ":00-05:00");
+        	DateTime startDateTime = new DateTime("2015-12-07T" + beginTime[0] + ":" + beginTime[1] + ":00-05:00");
         	EventDateTime start = new EventDateTime()
         	    .setDateTime(startDateTime)
         	    .setTimeZone("America/New_York");
         	event.setStart(start);
 
-        	DateTime endDateTime = new DateTime("2015-12-07T" + "09" + ":" + "02" + ":00-05:00");
+        	DateTime endDateTime = new DateTime("2015-12-07T" + endTime[0] + ":" + endTime[1] + ":00-05:00");
         	EventDateTime end = new EventDateTime()
         	    .setDateTime(endDateTime)
         	    .setTimeZone("America/New_York");
