@@ -14,6 +14,7 @@ import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.client.util.DateTime;
 
 import com.google.api.services.calendar.CalendarScopes;
+import com.google.api.services.calendar.Calendar;
 import com.google.api.services.calendar.model.*;
 
 import java.io.IOException;
@@ -107,16 +108,16 @@ public class GoogleCalendar {
         	    .setLocation("Active Aging")
         	    .setDescription("Trip to: " + "Active Aging");
 
-        	DateTime startDateTime = new DateTime("2015-12-07T" + "09" + ":00:00-07:00");
+        	DateTime startDateTime = new DateTime("2015-12-07T" + "08" + ":" + "43" + ":00-05:00");
         	EventDateTime start = new EventDateTime()
         	    .setDateTime(startDateTime)
-        	    .setTimeZone("America/Los_Angeles");
+        	    .setTimeZone("America/New_York");
         	event.setStart(start);
 
-        	DateTime endDateTime = new DateTime("2015-12-07T17:00:00-07:00");
+        	DateTime endDateTime = new DateTime("2015-12-07T" + "09" + ":" + "02" + ":00-05:00");
         	EventDateTime end = new EventDateTime()
         	    .setDateTime(endDateTime)
-        	    .setTimeZone("America/Los_Angeles");
+        	    .setTimeZone("America/New_York");
         	event.setEnd(end);
 
         	String[] recurrence = new String[] {"RRULE:FREQ=WEEKLY;COUNT=16"};
@@ -140,6 +141,7 @@ public class GoogleCalendar {
         	String calendarId = "shuttlevanschedule@gmail.com";
         	event = service.events().insert(calendarId, event).execute();
         	System.out.printf("Event created: %s\n", event.getHtmlLink());
+        	
     }
 
 }
