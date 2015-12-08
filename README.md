@@ -1,10 +1,14 @@
 # GIV-planner
 ______
 
-"A Google-integrated van planner"
+"A Google-Integrated Van planner"
 
 # Overview
 ______
+
+Tired of creating hundreds of Google Calendar Events manually? Well,
+then the **Giv-planner** is for you! Give it a shot!
+
 *GIV-planner* is a command line scheduler tool, calculating the best route to a number of locations given a time frame.
 
 # Requirements
