@@ -213,10 +213,10 @@ public class AppsScriptApi {
                 
                 // make each 2d list for each day
                  List<List<String>> monday = rideRequests.get(0);
-                 List<List<String>> tuesday = rideRequests.get(0);
-                 List<List<String>> wednesday = rideRequests.get(0);
-                 List<List<String>> thursday = rideRequests.get(0);
-                 List<List<String>> friday = rideRequests.get(0);
+                 List<List<String>> tuesday = rideRequests.get(1);
+                 List<List<String>> wednesday = rideRequests.get(2);
+                 List<List<String>> thursday = rideRequests.get(3);
+                 List<List<String>> friday = rideRequests.get(4);
 
                 // turn each 2d list into 2d array
                  String[][] mondayArray = listToString(monday);
