@@ -9,7 +9,8 @@ ______
 
 # Requirements
 ______
-+ Java 7.0 < (at least)
++ [Java
+  7.0](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) < (at least)
 + Git v1.9.X < (optional - for cloning, making changes to the source
   code)
 + Google Account
@@ -17,7 +18,7 @@ ______
 
 # Installing
 ______
-The best way to obtain **GIV-planner** is to **clone** it using the `git
+The best, and easiest, way to obtain **GIV-planner** is to **clone** it using the `git
 clone` command.
 
 The following command is the `git clone` command using
@@ -53,8 +54,24 @@ example._
 ![alt
 tag](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/download.png?token=AFShGK2760yAnY8XvT83IFfULdDPWpX-ks5WbjRKwA%3D%3D)
 
+# Preparation
+______
++ Relocate **GIV-planner**
++ Unzip **GIV-planner**
++ Launch Terminal or Command Prompt
++ Change into `giv-planner-master` directory
+
+### Relocating **GIV-planner**
+While in your `Downloads/` directory, highlight the **unzipped** `giv-planner-master`
+and then **drag-and-drop** to the new location where you would like to
+be able to access the tool in the future.
+
+### Unzip GIV-planner
 After downloading the ZIP to your local machine, you will need to
 "unzip" the ZIP. You can do this simple by a *double-click* on the ZIP.
+You may have to **right-click** on the zipped folder and choose
+**Extract All**---depending on your operating system.
+
 In doing so, an unzipped folder will appear---displayed in the figure
 below.
 
@@ -63,20 +80,8 @@ example was taken on a Mac, your file system may look different than the
 example. Also, unzipping a file may require a different process in a
 different operating system._
 
-
 ![alt
 tag](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/unzip.png?token=AFShGAKYvj80_hhNVdrGyNFhQgx2b6Ydks5WbjVFwA%3D%3D)
-
-# Preparation
-______
-+ Relocate **GIV-planner**
-+ Launch Terminal or Command Prompt
-+ Change into `giv-planner-master` directory
-
-### Relocating **GIV-planner**
-While in your `Downloads/` directory, highlight the **unzipped** `giv-planner-master`
-and then **drag-and-drop** to the new location where you would like to
-be able to access the tool in the future.
 
 ### Launch Terminal or Command Prompt
 Our system, in its current state, requires you to use the
@@ -95,7 +100,25 @@ The following command is the
 `cd <folder_name/to/giv-planner-master>` command or **Change Directory** command:
 
 ```
+# OSX/Linux
 cd <folder_name/path/to/giv-planner-master>
+
+# Windows (backslash instead of forwardslash)
+cd <folder_name\path\to\giv-planner-master>
+```
+
+By default, remember that the ZIP downloaded to your `Downloads/`
+directory. Depending on where you extracted the ZIP to will determine
+where the unzipped directory is located. By default, it should have also
+extracted to the `Downloads/` directory.
+
+So the following command should be applicable to you:
+
+```
+# That is not a typo. In the extraction process it puts it in a folder
+# of the same name
+
+cd Downloads\giv-planner-master\giv-planner-master\
 ```
 
 Once you are in the `giv-planner-master` directory, give yourself a pat
@@ -104,6 +127,72 @@ becoming a computer expert hacking away in the Terminal/Command Prompt.
 
 # Usage
 ______
+In the current state, we use [Gradle](http://gradle.org/) a Java build
+tool to manage the system's tasks.
+
+## Steps
++ Start Gradle
++ Run (with Gradle)
+
+### Start Gradle
+Starting Gradle is easy!
+
+Again, you will see that this step is operating system dependent.
+
+```
+# OSX/Linux
+./gradlew
+
+# Windows
+gradlew.bat
+```
+
+Running the above commands should provide you with output similar to the
+following:
+
+```
+Starting a new Gradle Daemon for this build (subsequent builds will be
+faster).
+:help
+
+Welcome to Gradle 2.9.
+
+To run a build, run gradlew <task> ...
+
+To see a list of available tasks, run gradlew tasks
+
+To see a list of command-line options, run gradlew --help
+
+To see more detail about a task, run gradlew help --task <task>
+
+BUILD SUCCESSFUL
+
+Total time: 6.197 secs
+```
+
+If you want to be less cool, you can navigate to the
+`giv-planner-master` folder from **My Documents** and then just
+**double-click** the `gradlew` Windows batch file. Remember, this will
+automatically make you less "cool".
+
+## Run (with Gradle)
+Again, Gradle makes running this system very easy. Running this system
+is as easy as the following command:
+
+```
+# OSX/Linux
+./gradlew run
+
+# Windows
+gradlew run
+```
+
+If you do not get output similar to this, please refer to the FAQ
+sections below.
+
+# FAQ
++ [**JAVA_HOME** is not set and no **java** command can be
+  found](https://docs.oracle.com/cd/E19509-01/820-3208/inst_cli_jdk_javahome_t/)
 
 # Feedback
 ______
