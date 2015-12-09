@@ -11,7 +11,6 @@ We used two tools to analyze the design of SchemaAnalyst, JDepend which allowed 
 As aforementioned, the first tool that we used to measure the quality of the design for our systems was JDepend. We used JDepend to find the number of afferent and efferent couplings. From these metrics, we were able to conclude that the more afferent couplings and fewer efferent
 couplings. Although the system shows a great deal of packages that have responsibility to the system as a whole there are other aspects that JDepend test for that shows the instability of a package in the sysem. For example, looking at the data found, we determined that the "org.schemaanalyst.mutation" package can be determined as unstable due to the ratio of the number of efferent coupling (Ce) to the total number of coupling, (Ca+Ce). All together, the system is stable.
 
-![Figure 1: SNIP: Afferent v. Efferent](../MetricTesting/JDepend-VanSchedule.png)
 
 
 ### JavaNCSS- Overview
@@ -25,5 +24,4 @@ The second tool used to measure the quality of the design for SchemaAnalyst was 
 
 At an object level, Van Schedule possessed on average of non commented source statements per package 705.50 and number of functions per package to be about 90.50. These numbers in the Van Schedule were good, allowing us to conclude that these open-source tools are designed well according to JavaNCSS. ALso the Average CCN, cyclomatic complexity number, was 1.7
 
-![Figure 3: JavaNCSS Overview](../MetricTesting/JavaNCSS-VanSchedule.png)
 
