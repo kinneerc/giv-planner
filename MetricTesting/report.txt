@@ -1,0 +1,4819 @@
+
+--------------------------------------------------
+- Package: com.esotericsoftware.kryo
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 1
+
+    A: 0
+    I: 0.33
+    D: 0.67
+
+Abstract Classes:
+
+Concrete Classes:
+    com.esotericsoftware.kryo.KryoException
+
+Depends Upon:
+    java.lang
+
+Used By:
+    com.esotericsoftware.kryo.io
+    org.gradle.internal.serialize.kryo
+
+--------------------------------------------------
+- Package: com.esotericsoftware.kryo.io
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 3
+
+    A: 0
+    I: 0.75
+    D: 0.25
+
+Abstract Classes:
+
+Concrete Classes:
+    com.esotericsoftware.kryo.io.Input
+    com.esotericsoftware.kryo.io.Output
+
+Depends Upon:
+    com.esotericsoftware.kryo
+    java.io
+    java.lang
+
+Used By:
+    org.gradle.internal.serialize.kryo
+
+--------------------------------------------------
+- Package: com.google.api.client.auth.oauth2
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.extensions.java6.auth.oauth2
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.extensions.jetty.auth.oauth2
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.googleapis.auth.oauth2
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.googleapis.javanet
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.googleapis.json
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.http
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.json
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.json.jackson2
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.util
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.client.util.store
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.services.calendar
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.services.calendar.model
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.services.gmail
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.services.gmail.model
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.services.script
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.api.services.script.model
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.common.base
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 7
+    Abstract Classes: 3
+
+    Ca: 4
+    Ce: 3
+
+    A: 0.3
+    I: 0.43
+    D: 0.27
+
+Abstract Classes:
+    com.google.common.base.Equivalence
+    com.google.common.base.Predicate
+    com.google.common.base.Ticker
+
+Concrete Classes:
+    com.google.common.base.Equivalence$Equals
+    com.google.common.base.Equivalence$Identity
+    com.google.common.base.FunctionalEquivalence
+    com.google.common.base.Objects
+    com.google.common.base.PairwiseEquivalence
+    com.google.common.base.Preconditions
+    com.google.common.base.Ticker$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+
+Used By:
+    com.google.common.collect
+    org.gradle.internal.reflect
+    org.gradle.messaging.dispatch
+    org.gradle.messaging.remote.internal.inet
+
+--------------------------------------------------
+- Package: com.google.common.collect
+--------------------------------------------------
+
+Stats:
+    Total Classes: 41
+    Concrete Classes: 31
+    Abstract Classes: 10
+
+    Ca: 4
+    Ce: 11
+
+    A: 0.24
+    I: 0.73
+    D: 0.02
+
+Abstract Classes:
+    com.google.common.collect.GenericMapMaker
+    com.google.common.collect.ImmutableAsList
+    com.google.common.collect.ImmutableCollection
+    com.google.common.collect.ImmutableList
+    com.google.common.collect.ImmutableSet
+    com.google.common.collect.MapMaker$RemovalListener
+    com.google.common.collect.MapMakerInternalMap$EntryFactory
+    com.google.common.collect.MapMakerInternalMap$ReferenceEntry
+    com.google.common.collect.MapMakerInternalMap$Strength
+    com.google.common.collect.MapMakerInternalMap$ValueReference
+
+Concrete Classes:
+    com.google.common.collect.ComputingConcurrentHashMap
+    com.google.common.collect.EmptyImmutableSet
+    com.google.common.collect.GenericMapMaker$NullListener
+    com.google.common.collect.Hashing
+    com.google.common.collect.MapMaker
+    com.google.common.collect.MapMaker$ComputingMapAdapter
+    com.google.common.collect.MapMaker$NullComputingConcurrentMap
+    com.google.common.collect.MapMaker$NullConcurrentMap
+    com.google.common.collect.MapMakerInternalMap
+    com.google.common.collect.MapMakerInternalMap$1
+    com.google.common.collect.MapMakerInternalMap$2
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$1
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$2
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$3
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$4
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$5
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$6
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$7
+    com.google.common.collect.MapMakerInternalMap$EntryFactory$8
+    com.google.common.collect.MapMakerInternalMap$EvictionQueue
+    com.google.common.collect.MapMakerInternalMap$ExpirationQueue
+    com.google.common.collect.MapMakerInternalMap$Segment
+    com.google.common.collect.MapMakerInternalMap$Strength$1
+    com.google.common.collect.MapMakerInternalMap$Strength$2
+    com.google.common.collect.MapMakerInternalMap$Strength$3
+    com.google.common.collect.MapMakerInternalMap$StrongEntry
+    com.google.common.collect.MapMakerInternalMap$WeakValueReference
+    com.google.common.collect.ObjectArrays
+    com.google.common.collect.RegularImmutableAsList
+    com.google.common.collect.RegularImmutableSet
+    com.google.common.collect.SingletonImmutableSet
+
+Depends Upon:
+    com.google.common.base
+    com.google.common.primitives
+    java.io
+    java.lang
+    java.lang.ref
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    java.util.concurrent.atomic
+    java.util.concurrent.locks
+    java.util.logging
+
+Used By:
+    org.gradle.internal
+    org.gradle.internal.classloader
+    org.gradle.internal.serialize
+    org.gradle.messaging.remote.internal.inet
+
+--------------------------------------------------
+- Package: com.google.common.primitives
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.maps
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.google.maps.model
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: com.vladium.emma.rt
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 3
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    com.vladium.emma.rt.RT
+
+Depends Upon:
+    java.io
+    java.lang
+    org.jacoco.agent.rt
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: edu.allegheny.vanschedule
+--------------------------------------------------
+
+Stats:
+    Total Classes: 21
+    Concrete Classes: 21
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    edu.allegheny.vanschedule.CodysScheduler
+    edu.allegheny.vanschedule.Place
+    edu.allegheny.vanschedule.Request
+    edu.allegheny.vanschedule.Route
+    edu.allegheny.vanschedule.Scheduler
+    edu.allegheny.vanschedule.Stop
+    edu.allegheny.vanschedule.StopRequest
+    edu.allegheny.vanschedule.TestCodysScheduler
+    edu.allegheny.vanschedule.TestPlace
+    edu.allegheny.vanschedule.TestRequest
+    edu.allegheny.vanschedule.TestRoute
+    edu.allegheny.vanschedule.TestScheduler
+    edu.allegheny.vanschedule.TestStop
+    edu.allegheny.vanschedule.TestStopRequest
+    edu.allegheny.vanschedule.TestTime
+    edu.allegheny.vanschedule.TestTrip
+    edu.allegheny.vanschedule.TestTrip2
+    edu.allegheny.vanschedule.TestVanSchedule
+    edu.allegheny.vanschedule.Time
+    edu.allegheny.vanschedule.Trip
+    edu.allegheny.vanschedule.Trip2
+
+Depends Upon:
+    edu.allegheny.vanschedule.frontend
+    java.io
+    java.lang
+    java.util
+    org.junit
+
+Used By:
+    edu.allegheny.vanschedule.frontend
+
+--------------------------------------------------
+- Package: edu.allegheny.vanschedule.frontend
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 10
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 26
+
+    A: 0
+    I: 0.96
+    D: 0.04
+
+Abstract Classes:
+
+Concrete Classes:
+    edu.allegheny.vanschedule.frontend.AppsScriptApi
+    edu.allegheny.vanschedule.frontend.AppsScriptApi$1
+    edu.allegheny.vanschedule.frontend.CreateCalendarEvents
+    edu.allegheny.vanschedule.frontend.DailyRequestMaker
+    edu.allegheny.vanschedule.frontend.DailyRequests
+    edu.allegheny.vanschedule.frontend.GetMonday
+    edu.allegheny.vanschedule.frontend.GmailAPI
+    edu.allegheny.vanschedule.frontend.GoogleCalendar
+    edu.allegheny.vanschedule.frontend.GoogleMaps
+    edu.allegheny.vanschedule.frontend.TripGrouping
+
+Depends Upon:
+    com.google.api.client.auth.oauth2
+    com.google.api.client.extensions.java6.auth.oauth2
+    com.google.api.client.extensions.jetty.auth.oauth2
+    com.google.api.client.googleapis.auth.oauth2
+    com.google.api.client.googleapis.javanet
+    com.google.api.client.googleapis.json
+    com.google.api.client.http
+    com.google.api.client.json
+    com.google.api.client.json.jackson2
+    com.google.api.client.util
+    com.google.api.client.util.store
+    com.google.api.services.calendar
+    com.google.api.services.calendar.model
+    com.google.api.services.gmail
+    com.google.api.services.gmail.model
+    com.google.api.services.script
+    com.google.api.services.script.model
+    com.google.maps
+    com.google.maps.model
+    edu.allegheny.vanschedule
+    java.io
+    java.lang
+    java.text
+    java.util
+    javax.mail
+    javax.mail.internet
+
+Used By:
+    edu.allegheny.vanschedule
+
+--------------------------------------------------
+- Package: jarjar.org.gradle.process.internal.child
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: jarjar.org.gradle.process.internal.launcher
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 7
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    jarjar.org.gradle.process.internal.launcher.GradleWorkerMain
+
+Depends Upon:
+    jarjar.org.gradle.process.internal.child
+    java.io
+    java.lang
+    java.lang.reflect
+    java.net
+    java.util
+    java.util.concurrent
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: java.io
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.annotation
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.instrument
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.management
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.ref
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.lang.reflect
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.net
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.nio
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.nio.channels
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.security
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.text
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent.atomic
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.concurrent.locks
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.jar
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.logging
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.regex
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: java.util.zip
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.mail
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.mail.internet
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: javax.management
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: junit.extensions
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: junit.framework
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 1
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 2
+
+    A: 0.67
+    I: 0.5
+    D: 0.17
+
+Abstract Classes:
+    junit.framework.Test
+    junit.framework.TestCase
+
+Concrete Classes:
+    junit.framework.Assert
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+
+Used By:
+    org.junit.internal.builders
+    org.junit.internal.runners
+
+--------------------------------------------------
+- Package: net.rubygrapefruit.platform
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 3
+    Abstract Classes: 6
+
+    Ca: 3
+    Ce: 5
+
+    A: 0.67
+    I: 0.62
+    D: 0.29
+
+Abstract Classes:
+    net.rubygrapefruit.platform.NativeIntegration
+    net.rubygrapefruit.platform.PosixFiles
+    net.rubygrapefruit.platform.Process
+    net.rubygrapefruit.platform.ProcessLauncher
+    net.rubygrapefruit.platform.SystemInfo
+    net.rubygrapefruit.platform.WindowsRegistry
+
+Concrete Classes:
+    net.rubygrapefruit.platform.Native
+    net.rubygrapefruit.platform.NativeException
+    net.rubygrapefruit.platform.NativeIntegrationUnavailableException
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    net.rubygrapefruit.platform.internal
+    net.rubygrapefruit.platform.internal.jni
+
+Used By:
+    net.rubygrapefruit.platform.internal
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.nativeintegration.services
+
+--------------------------------------------------
+- Package: net.rubygrapefruit.platform.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 17
+    Concrete Classes: 12
+    Abstract Classes: 5
+
+    Ca: 3
+    Ce: 7
+
+    A: 0.29
+    I: 0.7
+    D: 0.01
+
+Abstract Classes:
+    net.rubygrapefruit.platform.internal.Platform
+    net.rubygrapefruit.platform.internal.Platform$OsX
+    net.rubygrapefruit.platform.internal.Platform$Posix
+    net.rubygrapefruit.platform.internal.Platform$Unix
+    net.rubygrapefruit.platform.internal.Platform$Windows
+
+Concrete Classes:
+    net.rubygrapefruit.platform.internal.LibraryDef
+    net.rubygrapefruit.platform.internal.NativeLibraryLoader
+    net.rubygrapefruit.platform.internal.NativeLibraryLocator
+    net.rubygrapefruit.platform.internal.Platform$FreeBSD32Bit
+    net.rubygrapefruit.platform.internal.Platform$FreeBSD64Bit
+    net.rubygrapefruit.platform.internal.Platform$Linux32Bit
+    net.rubygrapefruit.platform.internal.Platform$Linux64Bit
+    net.rubygrapefruit.platform.internal.Platform$OsX32Bit
+    net.rubygrapefruit.platform.internal.Platform$OsX64Bit
+    net.rubygrapefruit.platform.internal.Platform$Unsupported
+    net.rubygrapefruit.platform.internal.Platform$Window32Bit
+    net.rubygrapefruit.platform.internal.Platform$Window64Bit
+
+Depends Upon:
+    java.io
+    java.lang
+    java.net
+    java.nio.channels
+    java.util
+    net.rubygrapefruit.platform
+    net.rubygrapefruit.platform.internal.jni
+
+Used By:
+    net.rubygrapefruit.platform
+    net.rubygrapefruit.platform.internal.jni
+    org.gradle.internal.nativeintegration.services
+
+--------------------------------------------------
+- Package: net.rubygrapefruit.platform.internal.jni
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 2
+
+    A: 0
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+
+Concrete Classes:
+    net.rubygrapefruit.platform.internal.jni.NativeLibraryFunctions
+
+Depends Upon:
+    java.lang
+    net.rubygrapefruit.platform.internal
+
+Used By:
+    net.rubygrapefruit.platform
+    net.rubygrapefruit.platform.internal
+
+--------------------------------------------------
+- Package: org.apache.commons.lang
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 3
+
+    A: 0
+    I: 0.75
+    D: 0.25
+
+Abstract Classes:
+
+Concrete Classes:
+    org.apache.commons.lang.StringUtils
+
+Depends Upon:
+    java.lang
+    java.util
+    org.apache.commons.lang.text
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+
+--------------------------------------------------
+- Package: org.apache.commons.lang.text
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.fusesource.jansi
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.gradle.api
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 2
+    Abstract Classes: 2
+
+    Ca: 15
+    Ce: 1
+
+    A: 0.5
+    I: 0.06
+    D: 0.44
+
+Abstract Classes:
+    org.gradle.api.Action
+    org.gradle.api.Transformer
+
+Concrete Classes:
+    org.gradle.api.GradleException
+    org.gradle.api.UncheckedIOException
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.internal
+    org.gradle.internal.event
+    org.gradle.internal.exceptions
+    org.gradle.internal.jvm
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.reflect
+    org.gradle.internal.service
+    org.gradle.logging.internal
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.inet
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.api.internal.tasks.testing
+--------------------------------------------------
+
+Stats:
+    Total Classes: 16
+    Concrete Classes: 10
+    Abstract Classes: 6
+
+    Ca: 4
+    Ce: 11
+
+    A: 0.38
+    I: 0.73
+    D: 0.11
+
+Abstract Classes:
+    org.gradle.api.internal.tasks.testing.AbstractTestDescriptor
+    org.gradle.api.internal.tasks.testing.TestClassProcessor
+    org.gradle.api.internal.tasks.testing.TestClassRunInfo
+    org.gradle.api.internal.tasks.testing.TestDescriptorInternal
+    org.gradle.api.internal.tasks.testing.TestResultProcessor
+    org.gradle.api.internal.tasks.testing.WorkerTestClassProcessorFactory
+
+Concrete Classes:
+    org.gradle.api.internal.tasks.testing.DefaultTestClassDescriptor
+    org.gradle.api.internal.tasks.testing.DefaultTestClassRunInfo
+    org.gradle.api.internal.tasks.testing.DefaultTestDescriptor
+    org.gradle.api.internal.tasks.testing.DefaultTestMethodDescriptor
+    org.gradle.api.internal.tasks.testing.DefaultTestOutputEvent
+    org.gradle.api.internal.tasks.testing.DefaultTestSuiteDescriptor
+    org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor
+    org.gradle.api.internal.tasks.testing.TestCompleteEvent
+    org.gradle.api.internal.tasks.testing.TestStartEvent
+    org.gradle.api.internal.tasks.testing.TestSuiteExecutionException
+
+Depends Upon:
+    java.io
+    java.lang
+    org.apache.commons.lang
+    org.gradle.api
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.api.internal.tasks.testing.results
+    org.gradle.api.tasks.testing
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.service
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.api.internal.tasks.testing.results
+    org.gradle.api.internal.tasks.testing.worker
+
+--------------------------------------------------
+- Package: org.gradle.api.internal.tasks.testing.junit
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 7
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 20
+
+    A: 0.12
+    I: 0.95
+    D: 0.08
+
+Abstract Classes:
+    org.gradle.api.internal.tasks.testing.junit.TestClassExecutionListener
+
+Concrete Classes:
+    org.gradle.api.internal.tasks.testing.junit.JULRedirector
+    org.gradle.api.internal.tasks.testing.junit.JUnitSpec
+    org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter
+    org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor
+    org.gradle.api.internal.tasks.testing.junit.JUnitTestEventAdapter
+    org.gradle.api.internal.tasks.testing.junit.JUnitTestFramework$TestClassProcessorFactoryImpl
+    org.gradle.api.internal.tasks.testing.junit.TestClassExecutionEventGenerator
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.logging
+    java.util.regex
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.api.internal.tasks.testing.results
+    org.gradle.api.tasks.testing
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.id
+    org.gradle.internal.service
+    org.gradle.logging
+    org.gradle.messaging.actor
+    org.gradle.util
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.slf4j
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+
+--------------------------------------------------
+- Package: org.gradle.api.internal.tasks.testing.processors
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 6
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 10
+
+    A: 0.14
+    I: 0.83
+    D: 0.02
+
+Abstract Classes:
+    org.gradle.api.internal.tasks.testing.processors.StandardOutputRedirector
+
+Concrete Classes:
+    org.gradle.api.internal.tasks.testing.processors.CaptureTestOutputTestResultProcessor
+    org.gradle.api.internal.tasks.testing.processors.DefaultStandardOutputRedirector
+    org.gradle.api.internal.tasks.testing.processors.DefaultStandardOutputRedirector$DiscardAction
+    org.gradle.api.internal.tasks.testing.processors.DefaultStandardOutputRedirector$WriteAction
+    org.gradle.api.internal.tasks.testing.processors.TestOutputRedirector
+    org.gradle.api.internal.tasks.testing.processors.TestOutputRedirector$Forwarder
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.concurrent
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.logging
+    org.gradle.api.tasks.testing
+    org.gradle.internal.io
+    org.gradle.logging
+    org.gradle.util
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.junit
+
+--------------------------------------------------
+- Package: org.gradle.api.internal.tasks.testing.results
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 3
+
+    A: 0
+    I: 0.6
+    D: 0.4
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.api.internal.tasks.testing.results.AttachParentTestResultProcessor
+
+Depends Upon:
+    java.lang
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.tasks.testing
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.junit
+
+--------------------------------------------------
+- Package: org.gradle.api.internal.tasks.testing.worker
+--------------------------------------------------
+
+Stats:
+    Total Classes: 17
+    Concrete Classes: 16
+    Abstract Classes: 1
+
+    Ca: 0
+    Ce: 17
+
+    A: 0.06
+    I: 1
+    D: 0.06
+
+Abstract Classes:
+    org.gradle.api.internal.tasks.testing.worker.RemoteTestClassProcessor
+
+Concrete Classes:
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$DefaultTestClassDescriptorSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$DefaultTestClassRunInfoSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$DefaultTestDescriptorSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$DefaultTestMethodDescriptorSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$DefaultTestOutputEventSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$DefaultTestSuiteDescriptorSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$IdSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$NullableSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$TestCompleteEventSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$TestStartEventSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestEventSerializer$WorkerTestSuiteDescriptorSerializer
+    org.gradle.api.internal.tasks.testing.worker.TestWorker
+    org.gradle.api.internal.tasks.testing.worker.TestWorker$TestFrameworkServiceRegistry
+    org.gradle.api.internal.tasks.testing.worker.WorkerTestClassProcessor
+    org.gradle.api.internal.tasks.testing.worker.WorkerTestClassProcessor$WorkerTestSuiteDescriptor
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util.concurrent
+    org.gradle.api
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.tasks.testing
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.id
+    org.gradle.internal.serialize
+    org.gradle.internal.service
+    org.gradle.messaging.actor
+    org.gradle.messaging.actor.internal
+    org.gradle.messaging.dispatch
+    org.gradle.messaging.remote
+    org.gradle.process.internal
+    org.slf4j
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.gradle.api.logging
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 1
+    Abstract Classes: 4
+
+    Ca: 5
+    Ce: 2
+
+    A: 0.8
+    I: 0.29
+    D: 0.09
+
+Abstract Classes:
+    org.gradle.api.logging.Logger
+    org.gradle.api.logging.LoggingManager
+    org.gradle.api.logging.LoggingOutput
+    org.gradle.api.logging.StandardOutputListener
+
+Concrete Classes:
+    org.gradle.api.logging.LogLevel
+
+Depends Upon:
+    java.lang
+    org.slf4j
+
+Used By:
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.logging
+    org.gradle.logging.internal
+    org.gradle.logging.internal.slf4j
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.api.specs
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 3
+    Ce: 1
+
+    A: 1
+    I: 0.25
+    D: 0.25
+
+Abstract Classes:
+    org.gradle.api.specs.Spec
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.internal
+    org.gradle.internal.reflect
+    org.gradle.internal.service
+
+--------------------------------------------------
+- Package: org.gradle.api.tasks.testing
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 2
+    Abstract Classes: 2
+
+    Ca: 5
+    Ce: 1
+
+    A: 0.5
+    I: 0.17
+    D: 0.33
+
+Abstract Classes:
+    org.gradle.api.tasks.testing.TestDescriptor
+    org.gradle.api.tasks.testing.TestOutputEvent
+
+Concrete Classes:
+    org.gradle.api.tasks.testing.TestOutputEvent$Destination
+    org.gradle.api.tasks.testing.TestResult$ResultType
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.api.internal.tasks.testing.results
+    org.gradle.api.internal.tasks.testing.worker
+
+--------------------------------------------------
+- Package: org.gradle.cli
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 1
+
+    A: 1
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+    org.gradle.cli.CommandLineConverter
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.logging
+
+--------------------------------------------------
+- Package: org.gradle.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 4
+    Abstract Classes: 3
+
+    Ca: 20
+    Ce: 8
+
+    A: 0.43
+    I: 0.29
+    D: 0.29
+
+Abstract Classes:
+    org.gradle.internal.Actions
+    org.gradle.internal.Factory
+    org.gradle.internal.TimeProvider
+
+Concrete Classes:
+    org.gradle.internal.Actions$NullAction
+    org.gradle.internal.SystemProperties
+    org.gradle.internal.TrueTimeProvider
+    org.gradle.internal.UncheckedException
+
+Depends Upon:
+    com.google.common.collect
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    java.util.concurrent.locks
+    org.gradle.api
+    org.gradle.api.specs
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.internal.concurrent
+    org.gradle.internal.event
+    org.gradle.internal.jvm
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.nativeintegration.services
+    org.gradle.internal.reflect
+    org.gradle.internal.service
+    org.gradle.logging
+    org.gradle.logging.internal
+    org.gradle.logging.internal.slf4j
+    org.gradle.messaging.dispatch
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub.queue
+    org.gradle.messaging.remote.internal.inet
+    org.gradle.process.internal.child
+    org.gradle.util
+    org.slf4j.impl
+
+--------------------------------------------------
+- Package: org.gradle.internal.classloader
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 8
+    Abstract Classes: 2
+
+    Ca: 1
+    Ce: 9
+
+    A: 0.2
+    I: 0.9
+    D: 0.1
+
+Abstract Classes:
+    org.gradle.internal.classloader.ClassLoaderHierarchy
+    org.gradle.internal.classloader.ClassLoaderSpec
+
+Concrete Classes:
+    org.gradle.internal.classloader.CachingClassLoader
+    org.gradle.internal.classloader.CachingClassLoader$Spec
+    org.gradle.internal.classloader.FilteringClassLoader
+    org.gradle.internal.classloader.FilteringClassLoader$Spec
+    org.gradle.internal.classloader.MultiParentClassLoader
+    org.gradle.internal.classloader.MultiParentClassLoader$Spec
+    org.gradle.internal.classloader.MutableURLClassLoader
+    org.gradle.internal.classloader.MutableURLClassLoader$Spec
+
+Depends Upon:
+    com.google.common.collect
+    java.io
+    java.lang
+    java.net
+    java.util
+    java.util.concurrent
+    org.gradle.internal.classpath
+    org.gradle.internal.reflect
+    org.gradle.util
+
+Used By:
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.internal.classpath
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.gradle.internal.concurrent
+--------------------------------------------------
+
+Stats:
+    Total Classes: 15
+    Concrete Classes: 9
+    Abstract Classes: 6
+
+    Ca: 11
+    Ce: 7
+
+    A: 0.4
+    I: 0.39
+    D: 0.21
+
+Abstract Classes:
+    org.gradle.internal.concurrent.AsyncStoppable
+    org.gradle.internal.concurrent.ExecutorFactory
+    org.gradle.internal.concurrent.ExecutorPolicy
+    org.gradle.internal.concurrent.Stoppable
+    org.gradle.internal.concurrent.StoppableExecutor
+    org.gradle.internal.concurrent.ThreadSafe
+
+Concrete Classes:
+    org.gradle.internal.concurrent.CompositeStoppable
+    org.gradle.internal.concurrent.CompositeStoppable$1
+    org.gradle.internal.concurrent.CompositeStoppable$2
+    org.gradle.internal.concurrent.DefaultExecutorFactory
+    org.gradle.internal.concurrent.DefaultExecutorFactory$TrackedStoppableExecutor
+    org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures
+    org.gradle.internal.concurrent.StoppableExecutorImpl
+    org.gradle.internal.concurrent.StoppableExecutorImpl$1
+    org.gradle.internal.concurrent.ThreadFactoryImpl
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.concurrent
+    java.util.concurrent.atomic
+    org.gradle.internal
+    org.slf4j
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.internal.service
+    org.gradle.logging.internal
+    org.gradle.messaging.actor
+    org.gradle.messaging.actor.internal
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.inet
+
+--------------------------------------------------
+- Package: org.gradle.internal.event
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 3
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 7
+
+    A: 0.25
+    I: 0.88
+    D: 0.12
+
+Abstract Classes:
+    org.gradle.internal.event.AbstractBroadcastDispatch
+
+Concrete Classes:
+    org.gradle.internal.event.BroadcastDispatch
+    org.gradle.internal.event.ListenerBroadcast
+    org.gradle.internal.event.ListenerNotificationException
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.gradle.api
+    org.gradle.internal
+    org.gradle.internal.exceptions
+    org.gradle.messaging.dispatch
+
+Used By:
+    org.gradle.logging.internal
+
+--------------------------------------------------
+- Package: org.gradle.internal.exceptions
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 5
+
+    A: 0.5
+    I: 0.83
+    D: 0.33
+
+Abstract Classes:
+    org.gradle.internal.exceptions.MultiCauseException
+
+Concrete Classes:
+    org.gradle.internal.exceptions.DefaultMultiCauseException
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.concurrent
+    org.gradle.api
+
+Used By:
+    org.gradle.internal.event
+
+--------------------------------------------------
+- Package: org.gradle.internal.id
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 4
+    Abstract Classes: 1
+
+    Ca: 3
+    Ce: 4
+
+    A: 0.2
+    I: 0.57
+    D: 0.23
+
+Abstract Classes:
+    org.gradle.internal.id.IdGenerator
+
+Concrete Classes:
+    org.gradle.internal.id.CompositeIdGenerator
+    org.gradle.internal.id.CompositeIdGenerator$CompositeId
+    org.gradle.internal.id.LongIdGenerator
+    org.gradle.internal.id.UUIDGenerator
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.concurrent.atomic
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.messaging.remote.internal
+
+--------------------------------------------------
+- Package: org.gradle.internal.io
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 6
+    Ce: 2
+
+    A: 0.5
+    I: 0.25
+    D: 0.25
+
+Abstract Classes:
+    org.gradle.internal.io.TextStream
+
+Concrete Classes:
+    org.gradle.internal.io.ClassLoaderObjectInputStream
+
+Depends Upon:
+    java.io
+    java.lang
+
+Used By:
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.internal.serialize
+    org.gradle.logging.internal
+    org.gradle.messaging.remote.internal
+    org.gradle.process.internal.child
+    org.gradle.util
+
+--------------------------------------------------
+- Package: org.gradle.internal.jvm
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 8
+
+    A: 0.5
+    I: 0.89
+    D: 0.39
+
+Abstract Classes:
+    org.gradle.internal.jvm.JavaInfo
+
+Concrete Classes:
+    org.gradle.internal.jvm.Jvm
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.concurrent.atomic
+    org.gradle.api
+    org.gradle.internal
+    org.gradle.internal.os
+    org.slf4j
+
+Used By:
+    org.gradle.internal.nativeintegration.services
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 3
+
+    A: 1
+    I: 0.75
+    D: 0.75
+
+Abstract Classes:
+    org.gradle.internal.nativeintegration.ProcessEnvironment
+
+Concrete Classes:
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+
+Used By:
+    org.gradle.internal.nativeintegration.services
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration.console
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 0
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 1
+
+    A: 1
+    I: 0.33
+    D: 0.33
+
+Abstract Classes:
+    org.gradle.internal.nativeintegration.console.ConsoleDetector
+    org.gradle.internal.nativeintegration.console.ConsoleMetaData
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.internal.nativeintegration.services
+    org.gradle.logging.internal
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration.filesystem
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 0
+    Abstract Classes: 7
+
+    Ca: 2
+    Ce: 2
+
+    A: 1
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+    org.gradle.internal.nativeintegration.filesystem.Chmod
+    org.gradle.internal.nativeintegration.filesystem.FileCanonicalizer
+    org.gradle.internal.nativeintegration.filesystem.FileModeAccessor
+    org.gradle.internal.nativeintegration.filesystem.FileModeMutator
+    org.gradle.internal.nativeintegration.filesystem.FileSystem
+    org.gradle.internal.nativeintegration.filesystem.Stat
+    org.gradle.internal.nativeintegration.filesystem.Symlink
+
+Concrete Classes:
+
+Depends Upon:
+    java.io
+    java.lang
+
+Used By:
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.nativeplatform.filesystem
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration.filesystem.services
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 8
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.internal.nativeintegration.filesystem.services.FileSystemServices
+
+Depends Upon:
+    java.lang
+    net.rubygrapefruit.platform
+    org.gradle.api
+    org.gradle.internal
+    org.gradle.internal.nativeintegration.filesystem
+    org.gradle.internal.nativeplatform.filesystem
+    org.gradle.internal.os
+    org.slf4j
+
+Used By:
+    org.gradle.internal.nativeintegration.services
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration.jna
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration.processenvironment
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeintegration.services
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 15
+
+    A: 0
+    I: 0.88
+    D: 0.12
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.internal.nativeintegration.services.NativeServices
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    net.rubygrapefruit.platform
+    net.rubygrapefruit.platform.internal
+    org.gradle.internal
+    org.gradle.internal.jvm
+    org.gradle.internal.nativeintegration
+    org.gradle.internal.nativeintegration.console
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.nativeintegration.jna
+    org.gradle.internal.nativeintegration.processenvironment
+    org.gradle.internal.os
+    org.gradle.internal.service
+    org.slf4j
+
+Used By:
+    org.gradle.logging.internal
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.internal.nativeplatform.filesystem
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 2
+
+    A: 1
+    I: 0.67
+    D: 0.67
+
+Abstract Classes:
+    org.gradle.internal.nativeplatform.filesystem.FileSystem
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+    org.gradle.internal.nativeintegration.filesystem
+
+Used By:
+    org.gradle.internal.nativeintegration.filesystem.services
+
+--------------------------------------------------
+- Package: org.gradle.internal.os
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 6
+    Abstract Classes: 1
+
+    Ca: 3
+    Ce: 4
+
+    A: 0.14
+    I: 0.57
+    D: 0.29
+
+Abstract Classes:
+    org.gradle.internal.os.OperatingSystem
+
+Concrete Classes:
+    org.gradle.internal.os.OperatingSystem$FreeBSD
+    org.gradle.internal.os.OperatingSystem$Linux
+    org.gradle.internal.os.OperatingSystem$MacOs
+    org.gradle.internal.os.OperatingSystem$Solaris
+    org.gradle.internal.os.OperatingSystem$Unix
+    org.gradle.internal.os.OperatingSystem$Windows
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.regex
+
+Used By:
+    org.gradle.internal.jvm
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.nativeintegration.services
+
+--------------------------------------------------
+- Package: org.gradle.internal.reflect
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 4
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 9
+
+    A: 0.33
+    I: 0.82
+    D: 0.15
+
+Abstract Classes:
+    org.gradle.internal.reflect.PropertyAccessor
+    org.gradle.internal.reflect.PropertyMutator
+
+Concrete Classes:
+    org.gradle.internal.reflect.JavaMethod
+    org.gradle.internal.reflect.JavaReflectionUtil
+    org.gradle.internal.reflect.NoSuchMethodException
+    org.gradle.internal.reflect.NoSuchPropertyException
+
+Depends Upon:
+    com.google.common.base
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    org.gradle.api
+    org.gradle.api.specs
+    org.gradle.internal
+    org.gradle.util
+
+Used By:
+    org.gradle.internal.classloader
+    org.gradle.internal.service
+
+--------------------------------------------------
+- Package: org.gradle.internal.serialize
+--------------------------------------------------
+
+Stats:
+    Total Classes: 31
+    Concrete Classes: 21
+    Abstract Classes: 10
+
+    Ca: 6
+    Ce: 6
+
+    A: 0.32
+    I: 0.5
+    D: 0.18
+
+Abstract Classes:
+    org.gradle.internal.serialize.AbstractDecoder
+    org.gradle.internal.serialize.AbstractEncoder
+    org.gradle.internal.serialize.Decoder
+    org.gradle.internal.serialize.Encoder
+    org.gradle.internal.serialize.FlushableEncoder
+    org.gradle.internal.serialize.ObjectReader
+    org.gradle.internal.serialize.ObjectWriter
+    org.gradle.internal.serialize.Serializer
+    org.gradle.internal.serialize.SerializerRegistry
+    org.gradle.internal.serialize.StatefulSerializer
+
+Concrete Classes:
+    org.gradle.internal.serialize.AbstractDecoder$DecoderStream
+    org.gradle.internal.serialize.AbstractEncoder$EncoderStream
+    org.gradle.internal.serialize.BaseSerializerFactory
+    org.gradle.internal.serialize.BaseSerializerFactory$BooleanSerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$ByteArraySerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$EnumSerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$FileSerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$LongSerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$StringMapSerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$StringSerializer
+    org.gradle.internal.serialize.BaseSerializerFactory$ThrowableSerializer
+    org.gradle.internal.serialize.DefaultSerializer
+    org.gradle.internal.serialize.DefaultSerializerRegistry
+    org.gradle.internal.serialize.DefaultSerializerRegistry$1
+    org.gradle.internal.serialize.DefaultSerializerRegistry$TaggedTypeSerializer
+    org.gradle.internal.serialize.DefaultSerializerRegistry$TypeInfo
+    org.gradle.internal.serialize.ObjectArraySerializer
+    org.gradle.internal.serialize.Serializers
+    org.gradle.internal.serialize.Serializers$StatefulSerializerAdapter
+    org.gradle.internal.serialize.Serializers$StatefulSerializerAdapter$1
+    org.gradle.internal.serialize.Serializers$StatefulSerializerAdapter$2
+
+Depends Upon:
+    com.google.common.collect
+    java.io
+    java.lang
+    java.util
+    org.gradle.internal.io
+    org.gradle.messaging.remote.internal
+
+Used By:
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.internal.serialize.kryo
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.inet
+
+--------------------------------------------------
+- Package: org.gradle.internal.serialize.kryo
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 5
+
+    A: 0
+    I: 0.71
+    D: 0.29
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.internal.serialize.kryo.KryoBackedDecoder
+    org.gradle.internal.serialize.kryo.KryoBackedEncoder
+    org.gradle.internal.serialize.kryo.TypeSafeSerializer
+    org.gradle.internal.serialize.kryo.TypeSafeSerializer$1
+    org.gradle.internal.serialize.kryo.TypeSafeSerializer$2
+
+Depends Upon:
+    com.esotericsoftware.kryo
+    com.esotericsoftware.kryo.io
+    java.io
+    java.lang
+    org.gradle.internal.serialize
+
+Used By:
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+
+--------------------------------------------------
+- Package: org.gradle.internal.service
+--------------------------------------------------
+
+Stats:
+    Total Classes: 22
+    Concrete Classes: 13
+    Abstract Classes: 9
+
+    Ca: 6
+    Ce: 11
+
+    A: 0.41
+    I: 0.65
+    D: 0.06
+
+Abstract Classes:
+    org.gradle.internal.service.DefaultServiceRegistry$FactoryService
+    org.gradle.internal.service.DefaultServiceRegistry$LookupContext
+    org.gradle.internal.service.DefaultServiceRegistry$ManagedObjectProvider
+    org.gradle.internal.service.DefaultServiceRegistry$Provider
+    org.gradle.internal.service.DefaultServiceRegistry$ServiceProvider
+    org.gradle.internal.service.DefaultServiceRegistry$SingletonService
+    org.gradle.internal.service.DefaultServiceRegistry$TypeSpec
+    org.gradle.internal.service.ServiceRegistration
+    org.gradle.internal.service.ServiceRegistry
+
+Concrete Classes:
+    org.gradle.internal.service.DefaultServiceRegistry
+    org.gradle.internal.service.DefaultServiceRegistry$ClassSpec
+    org.gradle.internal.service.DefaultServiceRegistry$CompositeProvider
+    org.gradle.internal.service.DefaultServiceRegistry$DefaultLookupContext
+    org.gradle.internal.service.DefaultServiceRegistry$DefaultLookupContext$4
+    org.gradle.internal.service.DefaultServiceRegistry$FactoryMethodService
+    org.gradle.internal.service.DefaultServiceRegistry$OwnServices
+    org.gradle.internal.service.DefaultServiceRegistry$RelevantMethods
+    org.gradle.internal.service.DefaultServiceRegistry$RelevantMethodsBuilder
+    org.gradle.internal.service.ServiceCreationException
+    org.gradle.internal.service.ServiceLookupException
+    org.gradle.internal.service.ServiceValidationException
+    org.gradle.internal.service.UnknownServiceException
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    org.gradle.api
+    org.gradle.api.specs
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.reflect
+    org.gradle.internal.util
+
+Used By:
+    org.gradle.api.internal.tasks.testing
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.internal.nativeintegration.services
+    org.gradle.logging
+    org.gradle.messaging.remote.internal
+
+--------------------------------------------------
+- Package: org.gradle.internal.util
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 1
+
+    A: 1
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+    org.gradle.internal.util.BiFunction
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.internal.service
+
+--------------------------------------------------
+- Package: org.gradle.logging
+--------------------------------------------------
+
+Stats:
+    Total Classes: 11
+    Concrete Classes: 5
+    Abstract Classes: 6
+
+    Ca: 4
+    Ce: 8
+
+    A: 0.55
+    I: 0.67
+    D: 0.21
+
+Abstract Classes:
+    org.gradle.logging.LoggingManagerInternal
+    org.gradle.logging.LoggingServiceRegistry
+    org.gradle.logging.ProgressLoggerFactory
+    org.gradle.logging.StandardOutputCapture
+    org.gradle.logging.StyledTextOutput
+    org.gradle.logging.StyledTextOutputFactory
+
+Concrete Classes:
+    org.gradle.logging.LoggingConfiguration
+    org.gradle.logging.LoggingServiceRegistry$1
+    org.gradle.logging.LoggingServiceRegistry$CommandLineLogging
+    org.gradle.logging.LoggingServiceRegistry$NestedLogging
+    org.gradle.logging.StyledTextOutput$Style
+
+Depends Upon:
+    java.io
+    java.lang
+    org.gradle.api.logging
+    org.gradle.cli
+    org.gradle.internal
+    org.gradle.internal.service
+    org.gradle.logging.internal
+    org.gradle.logging.internal.slf4j
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.logging.internal
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.logging.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 46
+    Concrete Classes: 30
+    Abstract Classes: 16
+
+    Ca: 2
+    Ce: 18
+
+    A: 0.35
+    I: 0.9
+    D: 0.25
+
+Abstract Classes:
+    org.gradle.logging.internal.AbstractLineChoppingStyledTextOutput
+    org.gradle.logging.internal.AbstractStyledTextOutput
+    org.gradle.logging.internal.ColorMap
+    org.gradle.logging.internal.ColorMap$Color
+    org.gradle.logging.internal.Console
+    org.gradle.logging.internal.LoggingConfigurer
+    org.gradle.logging.internal.LoggingOutputInternal
+    org.gradle.logging.internal.LoggingSystem
+    org.gradle.logging.internal.LoggingSystem$Snapshot
+    org.gradle.logging.internal.OutputEvent
+    org.gradle.logging.internal.OutputEventListener
+    org.gradle.logging.internal.PrintStreamLoggingSystem
+    org.gradle.logging.internal.ProgressListener
+    org.gradle.logging.internal.RenderableOutputEvent
+    org.gradle.logging.internal.StdErrLoggingSystem
+    org.gradle.logging.internal.StdOutLoggingSystem
+
+Concrete Classes:
+    org.gradle.logging.internal.CategorisedOutputEvent
+    org.gradle.logging.internal.ConsoleConfigureAction
+    org.gradle.logging.internal.DefaultColorMap
+    org.gradle.logging.internal.DefaultColorMap$1
+    org.gradle.logging.internal.DefaultLoggingConfigurer
+    org.gradle.logging.internal.DefaultLoggingManager
+    org.gradle.logging.internal.DefaultLoggingManager$StartableLoggingSystem
+    org.gradle.logging.internal.DefaultLoggingManagerFactory
+    org.gradle.logging.internal.DefaultStdErrLoggingSystem
+    org.gradle.logging.internal.DefaultStdOutLoggingSystem
+    org.gradle.logging.internal.JavaUtilLoggingSystem
+    org.gradle.logging.internal.JavaUtilLoggingSystem$SnapshotImpl
+    org.gradle.logging.internal.LogEvent
+    org.gradle.logging.internal.LogLevelChangeEvent
+    org.gradle.logging.internal.LoggingSystemAdapter
+    org.gradle.logging.internal.LoggingSystemAdapter$SnapshotImpl
+    org.gradle.logging.internal.OutputEventRenderer
+    org.gradle.logging.internal.OutputEventRenderer$1
+    org.gradle.logging.internal.OutputEventRenderer$2
+    org.gradle.logging.internal.PrintStreamLoggingSystem$1
+    org.gradle.logging.internal.PrintStreamLoggingSystem$OutputEventDestination
+    org.gradle.logging.internal.PrintStreamLoggingSystem$PrintStreamDestination
+    org.gradle.logging.internal.PrintStreamLoggingSystem$SnapshotImpl
+    org.gradle.logging.internal.ProgressLogEventGenerator
+    org.gradle.logging.internal.StreamBackedStandardOutputListener
+    org.gradle.logging.internal.StreamingStyledTextOutput
+    org.gradle.logging.internal.StyledTextOutputBackedRenderer
+    org.gradle.logging.internal.StyledTextOutputBackedRenderer$OutputEventTextOutputImpl
+    org.gradle.logging.internal.StyledTextOutputEvent
+    org.gradle.logging.internal.TextStreamOutputEventListener
+
+Depends Upon:
+    java.io
+    java.lang
+    java.text
+    java.util
+    java.util.concurrent.atomic
+    java.util.logging
+    org.fusesource.jansi
+    org.gradle.api
+    org.gradle.api.logging
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.event
+    org.gradle.internal.io
+    org.gradle.internal.nativeintegration.console
+    org.gradle.internal.nativeintegration.services
+    org.gradle.logging
+    org.gradle.util
+    org.slf4j.bridge
+
+Used By:
+    org.gradle.logging
+    org.gradle.logging.internal.slf4j
+
+--------------------------------------------------
+- Package: org.gradle.logging.internal.slf4j
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 9
+
+    A: 0
+    I: 0.82
+    D: 0.18
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.logging.internal.slf4j.OutputEventListenerBackedLogger
+    org.gradle.logging.internal.slf4j.OutputEventListenerBackedLoggerContext
+    org.gradle.logging.internal.slf4j.OutputEventListenerBackedLoggerContext$NoOpLogger
+    org.gradle.logging.internal.slf4j.Slf4jLoggingConfigurer
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util.concurrent
+    java.util.concurrent.atomic
+    org.gradle.api.logging
+    org.gradle.internal
+    org.gradle.logging.internal
+    org.slf4j
+    org.slf4j.helpers
+
+Used By:
+    org.gradle.logging
+    org.slf4j.impl
+
+--------------------------------------------------
+- Package: org.gradle.messaging.actor
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 0
+    Abstract Classes: 2
+
+    Ca: 3
+    Ce: 3
+
+    A: 1
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+    org.gradle.messaging.actor.Actor
+    org.gradle.messaging.actor.ActorFactory
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+    org.gradle.internal.concurrent
+    org.gradle.messaging.dispatch
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.messaging.actor.internal
+
+--------------------------------------------------
+- Package: org.gradle.messaging.actor.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.messaging.actor.internal.DefaultActorFactory
+    org.gradle.messaging.actor.internal.DefaultActorFactory$BlockingActor
+
+Depends Upon:
+    java.lang
+    java.util
+    org.gradle.internal.concurrent
+    org.gradle.messaging.actor
+    org.gradle.messaging.dispatch
+
+Used By:
+    org.gradle.api.internal.tasks.testing.worker
+
+--------------------------------------------------
+- Package: org.gradle.messaging.dispatch
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 6
+    Abstract Classes: 3
+
+    Ca: 7
+    Ce: 5
+
+    A: 0.33
+    I: 0.42
+    D: 0.25
+
+Abstract Classes:
+    org.gradle.messaging.dispatch.Dispatch
+    org.gradle.messaging.dispatch.DispatchFailureHandler
+    org.gradle.messaging.dispatch.Receive
+
+Concrete Classes:
+    org.gradle.messaging.dispatch.ContextClassLoaderDispatch
+    org.gradle.messaging.dispatch.ContextClassLoaderProxy
+    org.gradle.messaging.dispatch.MethodInvocation
+    org.gradle.messaging.dispatch.ProxyDispatchAdapter
+    org.gradle.messaging.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler
+    org.gradle.messaging.dispatch.ReflectionDispatch
+
+Depends Upon:
+    com.google.common.base
+    java.lang
+    java.lang.reflect
+    java.util
+    org.gradle.internal
+
+Used By:
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.internal.event
+    org.gradle.messaging.actor
+    org.gradle.messaging.actor.internal
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.hub.queue
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 0
+    Abstract Classes: 5
+
+    Ca: 6
+    Ce: 5
+
+    A: 1
+    I: 0.45
+    D: 0.45
+
+Abstract Classes:
+    org.gradle.messaging.remote.Address
+    org.gradle.messaging.remote.MessagingClient
+    org.gradle.messaging.remote.MessagingServer
+    org.gradle.messaging.remote.ObjectConnection
+    org.gradle.messaging.remote.ObjectConnectionBuilder
+
+Concrete Classes:
+
+Depends Upon:
+    java.io
+    java.lang
+    org.gradle.api
+    org.gradle.internal.concurrent
+    org.gradle.internal.serialize
+
+Used By:
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.inet
+    org.gradle.process.internal
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 24
+    Concrete Classes: 14
+    Abstract Classes: 10
+
+    Ca: 6
+    Ce: 18
+
+    A: 0.42
+    I: 0.75
+    D: 0.17
+
+Abstract Classes:
+    org.gradle.messaging.remote.internal.AsyncConnection
+    org.gradle.messaging.remote.internal.ConnectCompletion
+    org.gradle.messaging.remote.internal.Connection
+    org.gradle.messaging.remote.internal.IncomingBroadcast
+    org.gradle.messaging.remote.internal.IncomingConnector
+    org.gradle.messaging.remote.internal.Message
+    org.gradle.messaging.remote.internal.MessageSerializer
+    org.gradle.messaging.remote.internal.OutgoingBroadcast
+    org.gradle.messaging.remote.internal.OutgoingConnector
+    org.gradle.messaging.remote.internal.RemoteConnection
+
+Concrete Classes:
+    org.gradle.messaging.remote.internal.ConnectException
+    org.gradle.messaging.remote.internal.KryoBackedMessageSerializer
+    org.gradle.messaging.remote.internal.KryoBackedMessageSerializer$1
+    org.gradle.messaging.remote.internal.Message$1
+    org.gradle.messaging.remote.internal.Message$ExceptionPlaceholder
+    org.gradle.messaging.remote.internal.Message$ExceptionPlaceholder$1
+    org.gradle.messaging.remote.internal.Message$ExceptionPlaceholder$2
+    org.gradle.messaging.remote.internal.Message$ExceptionReplacingObjectInputStream
+    org.gradle.messaging.remote.internal.Message$ExceptionReplacingObjectOutputStream
+    org.gradle.messaging.remote.internal.Message$TopLevelExceptionPlaceholder
+    org.gradle.messaging.remote.internal.MessageIOException
+    org.gradle.messaging.remote.internal.MessageOriginator
+    org.gradle.messaging.remote.internal.MessagingServices
+    org.gradle.messaging.remote.internal.PlaceholderException
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.net
+    org.gradle.api
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.id
+    org.gradle.internal.io
+    org.gradle.internal.serialize
+    org.gradle.internal.serialize.kryo
+    org.gradle.internal.service
+    org.gradle.messaging.dispatch
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.inet
+    org.gradle.messaging.remote.internal.protocol
+    org.slf4j
+
+Used By:
+    org.gradle.internal.serialize
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.hub.protocol
+    org.gradle.messaging.remote.internal.inet
+    org.gradle.messaging.remote.internal.protocol
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote.internal.hub
+--------------------------------------------------
+
+Stats:
+    Total Classes: 22
+    Concrete Classes: 20
+    Abstract Classes: 2
+
+    Ca: 1
+    Ce: 15
+
+    A: 0.09
+    I: 0.94
+    D: 0.03
+
+Abstract Classes:
+    org.gradle.messaging.remote.internal.hub.HubStateListener
+    org.gradle.messaging.remote.internal.hub.RejectedMessageListener
+
+Concrete Classes:
+    org.gradle.messaging.remote.internal.hub.ConnectionSet
+    org.gradle.messaging.remote.internal.hub.ConnectionState
+    org.gradle.messaging.remote.internal.hub.IncomingQueue
+    org.gradle.messaging.remote.internal.hub.InterHubMessageSerializer
+    org.gradle.messaging.remote.internal.hub.InterHubMessageSerializer$MessageReader
+    org.gradle.messaging.remote.internal.hub.InterHubMessageSerializer$MessageWriter
+    org.gradle.messaging.remote.internal.hub.MessageHub
+    org.gradle.messaging.remote.internal.hub.MessageHub$ChannelDispatch
+    org.gradle.messaging.remote.internal.hub.MessageHub$ConnectionDispatch
+    org.gradle.messaging.remote.internal.hub.MessageHub$ConnectionReceive
+    org.gradle.messaging.remote.internal.hub.MessageHub$Discard
+    org.gradle.messaging.remote.internal.hub.MessageHub$Handler
+    org.gradle.messaging.remote.internal.hub.MessageHub$State
+    org.gradle.messaging.remote.internal.hub.MessageHubBackedClient
+    org.gradle.messaging.remote.internal.hub.MessageHubBackedObjectConnection
+    org.gradle.messaging.remote.internal.hub.MessageHubBackedObjectConnection$1
+    org.gradle.messaging.remote.internal.hub.MethodInvocationSerializer
+    org.gradle.messaging.remote.internal.hub.MethodInvocationSerializer$MethodInvocationReader
+    org.gradle.messaging.remote.internal.hub.MethodInvocationSerializer$MethodInvocationWriter
+    org.gradle.messaging.remote.internal.hub.OutgoingQueue
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    java.util
+    java.util.concurrent.locks
+    org.gradle.api
+    org.gradle.internal.concurrent
+    org.gradle.internal.serialize
+    org.gradle.internal.serialize.kryo
+    org.gradle.messaging.dispatch
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub.protocol
+    org.gradle.messaging.remote.internal.hub.queue
+    org.slf4j
+
+Used By:
+    org.gradle.messaging.remote.internal
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote.internal.hub.protocol
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 7
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 2
+
+    A: 0.22
+    I: 0.5
+    D: 0.28
+
+Abstract Classes:
+    org.gradle.messaging.remote.internal.hub.protocol.InterHubMessage
+    org.gradle.messaging.remote.internal.hub.protocol.Routable
+
+Concrete Classes:
+    org.gradle.messaging.remote.internal.hub.protocol.ChannelIdentifier
+    org.gradle.messaging.remote.internal.hub.protocol.ChannelMessage
+    org.gradle.messaging.remote.internal.hub.protocol.ConnectionClosed
+    org.gradle.messaging.remote.internal.hub.protocol.ConnectionEstablished
+    org.gradle.messaging.remote.internal.hub.protocol.EndOfStream
+    org.gradle.messaging.remote.internal.hub.protocol.InterHubMessage$Delivery
+    org.gradle.messaging.remote.internal.hub.protocol.RejectedMessage
+
+Depends Upon:
+    java.lang
+    org.gradle.messaging.remote.internal
+
+Used By:
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.hub.queue
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote.internal.hub.queue
+--------------------------------------------------
+
+Stats:
+    Total Classes: 5
+    Concrete Classes: 5
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 6
+
+    A: 0
+    I: 0.86
+    D: 0.14
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.messaging.remote.internal.hub.queue.EndPointQueue
+    org.gradle.messaging.remote.internal.hub.queue.MultiChannelQueue
+    org.gradle.messaging.remote.internal.hub.queue.MultiEndPointQueue
+    org.gradle.messaging.remote.internal.hub.queue.MultiEndPointQueue$1
+    org.gradle.messaging.remote.internal.hub.queue.QueueInitializer
+
+Depends Upon:
+    java.lang
+    java.util
+    java.util.concurrent.locks
+    org.gradle.internal
+    org.gradle.messaging.dispatch
+    org.gradle.messaging.remote.internal.hub.protocol
+
+Used By:
+    org.gradle.messaging.remote.internal.hub
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote.internal.inet
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 8
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 15
+
+    A: 0.11
+    I: 0.94
+    D: 0.05
+
+Abstract Classes:
+    org.gradle.messaging.remote.internal.inet.InetEndpoint
+
+Concrete Classes:
+    org.gradle.messaging.remote.internal.inet.InetAddressFactory
+    org.gradle.messaging.remote.internal.inet.MultiChoiceAddress
+    org.gradle.messaging.remote.internal.inet.SocketConnectCompletion
+    org.gradle.messaging.remote.internal.inet.SocketConnection
+    org.gradle.messaging.remote.internal.inet.SocketConnection$SocketInputStream
+    org.gradle.messaging.remote.internal.inet.SocketConnection$SocketOutputStream
+    org.gradle.messaging.remote.internal.inet.SocketInetAddress
+    org.gradle.messaging.remote.internal.inet.TcpOutgoingConnector
+
+Depends Upon:
+    com.google.common.base
+    com.google.common.collect
+    java.io
+    java.lang
+    java.net
+    java.nio
+    java.nio.channels
+    java.util
+    org.gradle.api
+    org.gradle.internal
+    org.gradle.internal.concurrent
+    org.gradle.internal.serialize
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal
+    org.slf4j
+
+Used By:
+    org.gradle.messaging.remote.internal
+
+--------------------------------------------------
+- Package: org.gradle.messaging.remote.internal.protocol
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 2
+
+    A: 0
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.messaging.remote.internal.protocol.DiscoveryMessage
+
+Depends Upon:
+    java.lang
+    org.gradle.messaging.remote.internal
+
+Used By:
+    org.gradle.messaging.remote.internal
+
+--------------------------------------------------
+- Package: org.gradle.process.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 2
+
+    A: 1
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+    org.gradle.process.internal.WorkerProcessContext
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+    org.gradle.messaging.remote
+
+Used By:
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.process.internal.child
+
+--------------------------------------------------
+- Package: org.gradle.process.internal.child
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 5
+    Abstract Classes: 1
+
+    Ca: 0
+    Ce: 16
+
+    A: 0.17
+    I: 1
+    D: 0.17
+
+Abstract Classes:
+    org.gradle.process.internal.child.WorkerContext
+
+Concrete Classes:
+    org.gradle.process.internal.child.ActionExecutionWorker
+    org.gradle.process.internal.child.ActionExecutionWorker$1
+    org.gradle.process.internal.child.ImplementationClassLoaderWorker
+    org.gradle.process.internal.child.SystemApplicationClassLoaderWorker
+    org.gradle.process.internal.child.SystemApplicationClassLoaderWorker$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.net
+    java.util
+    java.util.concurrent
+    org.gradle.api
+    org.gradle.api.logging
+    org.gradle.internal
+    org.gradle.internal.classloader
+    org.gradle.internal.io
+    org.gradle.internal.nativeintegration.services
+    org.gradle.logging
+    org.gradle.messaging.remote
+    org.gradle.messaging.remote.internal
+    org.gradle.process.internal
+    org.slf4j
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.gradle.util
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 5
+    Ce: 6
+
+    A: 0
+    I: 0.55
+    D: 0.45
+
+Abstract Classes:
+
+Concrete Classes:
+    org.gradle.util.LineBufferingOutputStream
+    org.gradle.util.LinePerThreadBufferingOutputStream
+    org.gradle.util.LinePerThreadBufferingOutputStream$1
+    org.gradle.util.LinePerThreadBufferingOutputStream$1$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.security
+    java.util
+    org.gradle.internal
+    org.gradle.internal.io
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.processors
+    org.gradle.internal.classloader
+    org.gradle.internal.reflect
+    org.gradle.logging.internal
+
+--------------------------------------------------
+- Package: org.hamcrest
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 1
+
+    A: 1
+    I: 0.33
+    D: 0.33
+
+Abstract Classes:
+    org.hamcrest.SelfDescribing
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.junit
+    org.junit.internal
+
+--------------------------------------------------
+- Package: org.jacoco.agent
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 0
+    Ce: 3
+
+    A: 0
+    I: 1
+    D: 0
+
+Abstract Classes:
+
+Concrete Classes:
+    org.jacoco.agent.AgentJar
+
+Depends Upon:
+    java.io
+    java.lang
+    java.net
+
+Used By:
+    Not used by any packages.
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 4
+
+    A: 0.5
+    I: 0.67
+    D: 0.17
+
+Abstract Classes:
+    org.jacoco.agent.rt.IAgent
+
+Concrete Classes:
+    org.jacoco.agent.rt.RT
+
+Depends Upon:
+    java.io
+    java.lang
+    org.jacoco.agent.rt.internal
+    org.jacoco.agent.rt.internal_b0d6a23
+
+Used By:
+    com.vladium.emma.rt
+    org.jacoco.agent.rt.internal_b0d6a23
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal.output
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23
+--------------------------------------------------
+
+Stats:
+    Total Classes: 11
+    Concrete Classes: 10
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 24
+
+    A: 0.09
+    I: 0.92
+    D: 0.01
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.IExceptionLogger
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.Agent
+    org.jacoco.agent.rt.internal_b0d6a23.Agent$1
+    org.jacoco.agent.rt.internal_b0d6a23.Agent$2
+    org.jacoco.agent.rt.internal_b0d6a23.ClassFileDumper
+    org.jacoco.agent.rt.internal_b0d6a23.ConfigLoader
+    org.jacoco.agent.rt.internal_b0d6a23.CoverageTransformer
+    org.jacoco.agent.rt.internal_b0d6a23.IExceptionLogger$1
+    org.jacoco.agent.rt.internal_b0d6a23.JmxRegistration
+    org.jacoco.agent.rt.internal_b0d6a23.Offline
+    org.jacoco.agent.rt.internal_b0d6a23.PreMain
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.instrument
+    java.lang.management
+    java.net
+    java.security
+    java.util
+    java.util.concurrent
+    java.util.regex
+    javax.management
+    org.jacoco.agent.rt
+    org.jacoco.agent.rt.internal
+    org.jacoco.agent.rt.internal.output
+    org.jacoco.agent.rt.internal_b0d6a23.core
+    org.jacoco.agent.rt.internal_b0d6a23.core.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    org.jacoco.agent.rt.internal_b0d6a23.output
+    org.jacoco.core
+    org.jacoco.core.data
+    org.jacoco.core.instr
+    org.jacoco.core.internal.data
+    org.jacoco.core.runtime
+
+Used By:
+    org.jacoco.agent.rt
+    org.jacoco.agent.rt.internal_b0d6a23.output
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.asm
+--------------------------------------------------
+
+Stats:
+    Total Classes: 21
+    Concrete Classes: 16
+    Abstract Classes: 5
+
+    Ca: 6
+    Ce: 4
+
+    A: 0.24
+    I: 0.4
+    D: 0.36
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.AnnotationVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.asm.ClassVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.asm.FieldVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.asm.MethodVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Opcodes
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.AnnotationWriter
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Attribute
+    org.jacoco.agent.rt.internal_b0d6a23.asm.ByteVector
+    org.jacoco.agent.rt.internal_b0d6a23.asm.ClassReader
+    org.jacoco.agent.rt.internal_b0d6a23.asm.ClassWriter
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Context
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Edge
+    org.jacoco.agent.rt.internal_b0d6a23.asm.FieldWriter
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Frame
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Handle
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Handler
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Item
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Label
+    org.jacoco.agent.rt.internal_b0d6a23.asm.MethodWriter
+    org.jacoco.agent.rt.internal_b0d6a23.asm.Type
+    org.jacoco.agent.rt.internal_b0d6a23.asm.TypePath
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.reflect
+    org.objectweb.asm
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.commons
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.asm.commons
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 8
+
+    A: 0
+    I: 0.89
+    D: 0.11
+
+Abstract Classes:
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.commons.AnalyzerAdapter
+    org.jacoco.agent.rt.internal_b0d6a23.asm.commons.JSRInlinerAdapter
+    org.jacoco.agent.rt.internal_b0d6a23.asm.commons.JSRInlinerAdapter$Instantiation
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.jacoco.agent.rt.internal_b0d6a23.asm
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree
+    org.objectweb.asm
+    org.objectweb.asm.commons
+    org.objectweb.asm.tree
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.asm.tree
+--------------------------------------------------
+
+Stats:
+    Total Classes: 27
+    Concrete Classes: 26
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 5
+
+    A: 0.04
+    I: 0.71
+    D: 0.25
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.AbstractInsnNode
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.AnnotationNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.FieldInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.FrameNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.IincInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.InsnList
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.InsnList$InsnListIterator
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.InsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.IntInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.InvokeDynamicInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.JumpInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.LabelNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.LdcInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.LineNumberNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.LocalVariableAnnotationNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.LocalVariableNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.LookupSwitchInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.MethodInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.MethodNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.MethodNode$1
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.MultiANewArrayInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.ParameterNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.TableSwitchInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.TryCatchBlockNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.TypeAnnotationNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.TypeInsnNode
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree.VarInsnNode
+
+Depends Upon:
+    java.lang
+    java.util
+    org.jacoco.agent.rt.internal_b0d6a23.asm
+    org.objectweb.asm
+    org.objectweb.asm.tree
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23.asm.commons
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 3
+
+    A: 0
+    I: 0.75
+    D: 0.25
+
+Abstract Classes:
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.JaCoCo
+
+Depends Upon:
+    java.lang
+    java.util
+    org.jacoco.core
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.data
+--------------------------------------------------
+
+Stats:
+    Total Classes: 7
+    Concrete Classes: 5
+    Abstract Classes: 2
+
+    Ca: 3
+    Ce: 6
+
+    A: 0.29
+    I: 0.67
+    D: 0.05
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.IExecutionDataVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.ISessionInfoVisitor
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.ExecutionData
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.ExecutionDataReader
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.ExecutionDataStore
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.ExecutionDataWriter
+    org.jacoco.agent.rt.internal_b0d6a23.core.data.SessionInfo
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data
+    org.jacoco.core.data
+    org.jacoco.core.internal.data
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    org.jacoco.agent.rt.internal_b0d6a23.output
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.instr
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 13
+
+    A: 0
+    I: 0.93
+    D: 0.07
+
+Abstract Classes:
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr.Instrumenter
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util.zip
+    org.jacoco.agent.rt.internal_b0d6a23.asm
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    org.jacoco.core.instr
+    org.jacoco.core.internal
+    org.jacoco.core.internal.flow
+    org.jacoco.core.internal.instr
+    org.objectweb.asm
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 4
+
+    A: 0
+    I: 0.8
+    D: 0.2
+
+Abstract Classes:
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.ContentTypeDetector
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.Pack200Streams
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.Pack200Streams$NoCloseInput
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util.jar
+    org.jacoco.core.internal
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.internal.data
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 4
+    Ce: 3
+
+    A: 0
+    I: 0.43
+    D: 0.57
+
+Abstract Classes:
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data.CRC64
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data.CompactDataInput
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data.CompactDataOutput
+
+Depends Upon:
+    java.io
+    java.lang
+    org.jacoco.core.internal.data
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23
+    org.jacoco.agent.rt.internal_b0d6a23.core.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow
+--------------------------------------------------
+
+Stats:
+    Total Classes: 13
+    Concrete Classes: 9
+    Abstract Classes: 4
+
+    Ca: 2
+    Ce: 9
+
+    A: 0.31
+    I: 0.82
+    D: 0.13
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.ClassProbesVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.IFrame
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.IProbeIdGenerator
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.MethodProbesVisitor
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.ClassProbesAdapter
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.ClassProbesAdapter$1
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.ClassProbesAdapter$2
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.FrameSnapshot
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.Instruction
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.LabelFlowAnalyzer
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.LabelInfo
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.MethodProbesAdapter
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow.MethodSanitizer
+
+Depends Upon:
+    java.lang
+    java.util
+    org.jacoco.agent.rt.internal_b0d6a23.asm
+    org.jacoco.agent.rt.internal_b0d6a23.asm.commons
+    org.jacoco.agent.rt.internal_b0d6a23.asm.tree
+    org.jacoco.core.internal.flow
+    org.objectweb.asm
+    org.objectweb.asm.commons
+    org.objectweb.asm.tree
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+--------------------------------------------------
+
+Stats:
+    Total Classes: 13
+    Concrete Classes: 11
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 14
+
+    A: 0.15
+    I: 0.88
+    D: 0.03
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.IProbeArrayStrategy
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.IProbeInserter
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.ClassInstrumenter
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.DuplicateFrameEliminator
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.FieldProbeArrayStrategy
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.InstrSupport
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.LocalProbeArrayStrategy
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.MethodInstrumenter
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.NoneProbeArrayStrategy
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.ProbeArrayStrategyFactory
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.ProbeCounter
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.ProbeInserter
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr.SignatureRemover
+
+Depends Upon:
+    java.io
+    java.lang
+    java.util
+    java.util.jar
+    java.util.regex
+    org.jacoco.agent.rt.internal_b0d6a23.asm
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    org.jacoco.core.internal.data
+    org.jacoco.core.internal.flow
+    org.jacoco.core.internal.instr
+    org.jacoco.core.runtime
+    org.objectweb.asm
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+--------------------------------------------------
+
+Stats:
+    Total Classes: 14
+    Concrete Classes: 10
+    Abstract Classes: 4
+
+    Ca: 4
+    Ce: 16
+
+    A: 0.29
+    I: 0.8
+    D: 0.09
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.AbstractRuntime
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.IExecutionDataAccessorGenerator
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.IRemoteCommandVisitor
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.IRuntime
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.AgentOptions
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.AgentOptions$OutputMode
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.CommandLineSupport
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.ModifiedSystemClassRuntime
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.ModifiedSystemClassRuntime$1
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.ModifiedSystemClassRuntime$2
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.RemoteControlReader
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.RemoteControlWriter
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.RuntimeData
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime.WildcardMatcher
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.instrument
+    java.lang.reflect
+    java.security
+    java.util
+    java.util.regex
+    org.jacoco.agent.rt.internal_b0d6a23.asm
+    org.jacoco.agent.rt.internal_b0d6a23.core.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    org.jacoco.core.data
+    org.jacoco.core.internal.data
+    org.jacoco.core.internal.instr
+    org.jacoco.core.runtime
+    org.objectweb.asm
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23
+    org.jacoco.agent.rt.internal_b0d6a23.core.instr
+    org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    org.jacoco.agent.rt.internal_b0d6a23.output
+
+--------------------------------------------------
+- Package: org.jacoco.agent.rt.internal_b0d6a23.output
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 7
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 11
+
+    A: 0.12
+    I: 0.92
+    D: 0.04
+
+Abstract Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.output.IAgentOutput
+
+Concrete Classes:
+    org.jacoco.agent.rt.internal_b0d6a23.output.FileOutput
+    org.jacoco.agent.rt.internal_b0d6a23.output.NoneOutput
+    org.jacoco.agent.rt.internal_b0d6a23.output.TcpClientOutput
+    org.jacoco.agent.rt.internal_b0d6a23.output.TcpClientOutput$1
+    org.jacoco.agent.rt.internal_b0d6a23.output.TcpConnection
+    org.jacoco.agent.rt.internal_b0d6a23.output.TcpServerOutput
+    org.jacoco.agent.rt.internal_b0d6a23.output.TcpServerOutput$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.net
+    java.nio.channels
+    org.jacoco.agent.rt.internal
+    org.jacoco.agent.rt.internal.output
+    org.jacoco.agent.rt.internal_b0d6a23
+    org.jacoco.agent.rt.internal_b0d6a23.core.data
+    org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    org.jacoco.core.data
+    org.jacoco.core.runtime
+
+Used By:
+    org.jacoco.agent.rt.internal_b0d6a23
+
+--------------------------------------------------
+- Package: org.jacoco.core
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.data
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.instr
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.internal
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.internal.data
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.internal.flow
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.internal.instr
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.jacoco.core.runtime
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.junit
+--------------------------------------------------
+
+Stats:
+    Total Classes: 12
+    Concrete Classes: 3
+    Abstract Classes: 9
+
+    Ca: 6
+    Ce: 5
+
+    A: 0.75
+    I: 0.45
+    D: 0.2
+
+Abstract Classes:
+    org.junit.After
+    org.junit.AfterClass
+    org.junit.Before
+    org.junit.BeforeClass
+    org.junit.ClassRule
+    org.junit.FixMethodOrder
+    org.junit.Ignore
+    org.junit.Rule
+    org.junit.Test
+
+Concrete Classes:
+    org.junit.Assert
+    org.junit.ComparisonFailure
+    org.junit.Test$None
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    org.hamcrest
+    org.junit.internal
+    org.junit.runners
+
+Used By:
+    edu.allegheny.vanschedule
+    org.junit.internal
+    org.junit.internal.builders
+    org.junit.internal.runners.rules
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal
+--------------------------------------------------
+
+Stats:
+    Total Classes: 4
+    Concrete Classes: 4
+    Abstract Classes: 0
+
+    Ca: 5
+    Ce: 6
+
+    A: 0
+    I: 0.55
+    D: 0.45
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.AssumptionViolatedException
+    org.junit.internal.MethodSorter
+    org.junit.internal.MethodSorter$1
+    org.junit.internal.MethodSorter$2
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.hamcrest
+    org.junit
+    org.junit.runners
+
+Used By:
+    org.junit
+    org.junit.internal.runners.model
+    org.junit.internal.runners.statements
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal.builders
+--------------------------------------------------
+
+Stats:
+    Total Classes: 8
+    Concrete Classes: 8
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 10
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.builders.AllDefaultPossibilitiesBuilder
+    org.junit.internal.builders.AnnotatedBuilder
+    org.junit.internal.builders.IgnoredBuilder
+    org.junit.internal.builders.IgnoredClassRunner
+    org.junit.internal.builders.JUnit3Builder
+    org.junit.internal.builders.JUnit4Builder
+    org.junit.internal.builders.NullBuilder
+    org.junit.internal.builders.SuiteMethodBuilder
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    junit.framework
+    org.junit
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+
+Used By:
+    org.junit.internal.requests
+    org.junit.runner
+
+--------------------------------------------------
+- Package: org.junit.internal.requests
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 6
+
+    A: 0
+    I: 0.86
+    D: 0.14
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.requests.ClassRequest
+    org.junit.internal.requests.FilterRequest
+    org.junit.internal.requests.SortingRequest
+
+Depends Upon:
+    java.lang
+    java.util
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runner.manipulation
+
+Used By:
+    org.junit.runner
+
+--------------------------------------------------
+- Package: org.junit.internal.runners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 3
+    Abstract Classes: 0
+
+    Ca: 4
+    Ce: 10
+
+    A: 0
+    I: 0.71
+    D: 0.29
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.runners.ErrorReportingRunner
+    org.junit.internal.runners.JUnit38ClassRunner
+    org.junit.internal.runners.SuiteMethod
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    junit.extensions
+    junit.framework
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners.model
+
+Used By:
+    org.junit.internal.builders
+    org.junit.internal.requests
+    org.junit.runner
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal.runners.model
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 1
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 7
+
+    A: 0.5
+    I: 0.78
+    D: 0.28
+
+Abstract Classes:
+    org.junit.internal.runners.model.ReflectiveCallable
+
+Concrete Classes:
+    org.junit.internal.runners.model.EachTestNotifier
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit.internal
+    org.junit.runner
+    org.junit.runner.notification
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.internal.runners.rules
+--------------------------------------------------
+
+Stats:
+    Total Classes: 11
+    Concrete Classes: 10
+    Abstract Classes: 1
+
+    Ca: 1
+    Ce: 6
+
+    A: 0.09
+    I: 0.86
+    D: 0.05
+
+Abstract Classes:
+    org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator
+
+Concrete Classes:
+    org.junit.internal.runners.rules.RuleMemberValidator
+    org.junit.internal.runners.rules.RuleMemberValidator$Builder
+    org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic
+    org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule
+    org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule
+    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule
+    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic
+    org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic
+    org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule
+    org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule
+
+Depends Upon:
+    java.lang
+    java.lang.reflect
+    java.util
+    org.junit
+    org.junit.rules
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.internal.runners.statements
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 6
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 6
+
+    A: 0
+    I: 0.86
+    D: 0.14
+
+Abstract Classes:
+
+Concrete Classes:
+    org.junit.internal.runners.statements.ExpectException
+    org.junit.internal.runners.statements.Fail
+    org.junit.internal.runners.statements.FailOnTimeout
+    org.junit.internal.runners.statements.InvokeMethod
+    org.junit.internal.runners.statements.RunAfters
+    org.junit.internal.runners.statements.RunBefores
+
+Depends Upon:
+    java.lang
+    java.lang.management
+    java.util
+    java.util.concurrent
+    org.junit.internal
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.rules
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 1
+    Abstract Classes: 2
+
+    Ca: 2
+    Ce: 4
+
+    A: 0.67
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+    org.junit.rules.MethodRule
+    org.junit.rules.TestRule
+
+Concrete Classes:
+    org.junit.rules.RunRules
+
+Depends Upon:
+    java.lang
+    java.util
+    org.junit.runner
+    org.junit.runners.model
+
+Used By:
+    org.junit.internal.runners.rules
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.runner
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 2
+    Abstract Classes: 4
+
+    Ca: 9
+    Ce: 12
+
+    A: 0.67
+    I: 0.57
+    D: 0.24
+
+Abstract Classes:
+    org.junit.runner.Describable
+    org.junit.runner.Request
+    org.junit.runner.RunWith
+    org.junit.runner.Runner
+
+Concrete Classes:
+    org.junit.runner.Description
+    org.junit.runner.Request$1
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.util
+    java.util.concurrent
+    java.util.regex
+    org.junit.internal.builders
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners.model
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.junit.internal.builders
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.rules
+    org.junit.runner.notification
+    org.junit.runners
+    org.junit.runners.model
+
+--------------------------------------------------
+- Package: org.junit.runner.manipulation
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 1
+    Abstract Classes: 2
+
+    Ca: 5
+    Ce: 1
+
+    A: 0.67
+    I: 0.17
+    D: 0.17
+
+Abstract Classes:
+    org.junit.runner.manipulation.Filterable
+    org.junit.runner.manipulation.Sortable
+
+Concrete Classes:
+    org.junit.runner.manipulation.NoTestsRemainException
+
+Depends Upon:
+    java.lang
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.junit.internal.requests
+    org.junit.internal.runners
+    org.junit.runner
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.runner.notification
+--------------------------------------------------
+
+Stats:
+    Total Classes: 10
+    Concrete Classes: 8
+    Abstract Classes: 2
+
+    Ca: 6
+    Ce: 6
+
+    A: 0.2
+    I: 0.5
+    D: 0.3
+
+Abstract Classes:
+    org.junit.runner.notification.RunListener$ThreadSafe
+    org.junit.runner.notification.RunNotifier$SafeNotifier
+
+Concrete Classes:
+    org.junit.runner.notification.Failure
+    org.junit.runner.notification.RunListener
+    org.junit.runner.notification.RunNotifier
+    org.junit.runner.notification.RunNotifier$3
+    org.junit.runner.notification.RunNotifier$4
+    org.junit.runner.notification.RunNotifier$7
+    org.junit.runner.notification.StoppedByUserException
+    org.junit.runner.notification.SynchronizedRunListener
+
+Depends Upon:
+    java.io
+    java.lang
+    java.lang.annotation
+    java.util
+    java.util.concurrent
+    org.junit.runner
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.runner
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.junit.runners
+--------------------------------------------------
+
+Stats:
+    Total Classes: 6
+    Concrete Classes: 5
+    Abstract Classes: 1
+
+    Ca: 3
+    Ce: 16
+
+    A: 0.17
+    I: 0.84
+    D: 0.01
+
+Abstract Classes:
+    org.junit.runners.ParentRunner
+
+Concrete Classes:
+    org.junit.runners.BlockJUnit4ClassRunner
+    org.junit.runners.BlockJUnit4ClassRunner$1
+    org.junit.runners.ParentRunner$1
+    org.junit.runners.ParentRunner$2
+    org.junit.runners.ParentRunner$3
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    java.util.concurrent
+    org.junit
+    org.junit.internal
+    org.junit.internal.runners.model
+    org.junit.internal.runners.rules
+    org.junit.internal.runners.statements
+    org.junit.rules
+    org.junit.runner
+    org.junit.runner.manipulation
+    org.junit.runner.notification
+    org.junit.runners.model
+    org.junit.validator
+
+Used By:
+    org.junit
+    org.junit.internal
+    org.junit.internal.builders
+
+--------------------------------------------------
+- Package: org.junit.runners.model
+--------------------------------------------------
+
+Stats:
+    Total Classes: 13
+    Concrete Classes: 8
+    Abstract Classes: 5
+
+    Ca: 9
+    Ce: 9
+
+    A: 0.38
+    I: 0.5
+    D: 0.12
+
+Abstract Classes:
+    org.junit.runners.model.Annotatable
+    org.junit.runners.model.FrameworkMember
+    org.junit.runners.model.RunnerBuilder
+    org.junit.runners.model.RunnerScheduler
+    org.junit.runners.model.Statement
+
+Concrete Classes:
+    org.junit.runners.model.FrameworkField
+    org.junit.runners.model.FrameworkMethod
+    org.junit.runners.model.FrameworkMethod$1
+    org.junit.runners.model.InitializationError
+    org.junit.runners.model.MultipleFailureException
+    org.junit.runners.model.TestClass
+    org.junit.runners.model.TestClass$FieldComparator
+    org.junit.runners.model.TestClass$MethodComparator
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.lang.reflect
+    java.util
+    org.junit
+    org.junit.internal
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.runner
+
+Used By:
+    org.junit.internal.builders
+    org.junit.internal.runners
+    org.junit.internal.runners.model
+    org.junit.internal.runners.rules
+    org.junit.internal.runners.statements
+    org.junit.rules
+    org.junit.runner
+    org.junit.runners
+    org.junit.validator
+
+--------------------------------------------------
+- Package: org.junit.validator
+--------------------------------------------------
+
+Stats:
+    Total Classes: 9
+    Concrete Classes: 6
+    Abstract Classes: 3
+
+    Ca: 1
+    Ce: 5
+
+    A: 0.33
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+    org.junit.validator.AnnotationsValidator$AnnotatableValidator
+    org.junit.validator.TestClassValidator
+    org.junit.validator.ValidateWith
+
+Concrete Classes:
+    org.junit.validator.AnnotationValidatorFactory
+    org.junit.validator.AnnotationsValidator
+    org.junit.validator.AnnotationsValidator$ClassValidator
+    org.junit.validator.AnnotationsValidator$FieldValidator
+    org.junit.validator.AnnotationsValidator$MethodValidator
+    org.junit.validator.PublicClassValidator
+
+Depends Upon:
+    java.lang
+    java.lang.annotation
+    java.util
+    java.util.concurrent
+    org.junit.runners.model
+
+Used By:
+    org.junit.runners
+
+--------------------------------------------------
+- Package: org.objectweb.asm
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.objectweb.asm.commons
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.objectweb.asm.tree
+--------------------------------------------------
+No stats available: package referenced, but not analyzed.
+
+--------------------------------------------------
+- Package: org.slf4j
+--------------------------------------------------
+
+Stats:
+    Total Classes: 3
+    Concrete Classes: 1
+    Abstract Classes: 2
+
+    Ca: 16
+    Ce: 6
+
+    A: 0.67
+    I: 0.27
+    D: 0.06
+
+Abstract Classes:
+    org.slf4j.ILoggerFactory
+    org.slf4j.Logger
+
+Concrete Classes:
+    org.slf4j.LoggerFactory
+
+Depends Upon:
+    java.io
+    java.lang
+    java.net
+    java.util
+    org.slf4j.helpers
+    org.slf4j.impl
+
+Used By:
+    org.gradle.api.internal.tasks.testing.junit
+    org.gradle.api.internal.tasks.testing.worker
+    org.gradle.api.logging
+    org.gradle.internal.concurrent
+    org.gradle.internal.jvm
+    org.gradle.internal.nativeintegration.filesystem.services
+    org.gradle.internal.nativeintegration.services
+    org.gradle.logging.internal.slf4j
+    org.gradle.messaging.remote.internal
+    org.gradle.messaging.remote.internal.hub
+    org.gradle.messaging.remote.internal.inet
+    org.gradle.process.internal.child
+    org.slf4j.bridge
+    org.slf4j.helpers
+    org.slf4j.impl
+    org.slf4j.spi
+
+--------------------------------------------------
+- Package: org.slf4j.bridge
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 6
+
+    A: 0
+    I: 0.86
+    D: 0.14
+
+Abstract Classes:
+
+Concrete Classes:
+    org.slf4j.bridge.SLF4JBridgeHandler
+
+Depends Upon:
+    java.lang
+    java.text
+    java.util
+    java.util.logging
+    org.slf4j
+    org.slf4j.spi
+
+Used By:
+    org.gradle.logging.internal
+
+--------------------------------------------------
+- Package: org.slf4j.helpers
+--------------------------------------------------
+
+Stats:
+    Total Classes: 2
+    Concrete Classes: 2
+    Abstract Classes: 0
+
+    Ca: 2
+    Ce: 4
+
+    A: 0
+    I: 0.67
+    D: 0.33
+
+Abstract Classes:
+
+Concrete Classes:
+    org.slf4j.helpers.NOPLoggerFactory
+    org.slf4j.helpers.SubstituteLoggerFactory
+
+Depends Upon:
+    java.lang
+    java.util
+    java.util.concurrent
+    org.slf4j
+
+Used By:
+    org.gradle.logging.internal.slf4j
+    org.slf4j
+
+--------------------------------------------------
+- Package: org.slf4j.impl
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 1
+    Abstract Classes: 0
+
+    Ca: 1
+    Ce: 5
+
+    A: 0
+    I: 0.83
+    D: 0.17
+
+Abstract Classes:
+
+Concrete Classes:
+    org.slf4j.impl.StaticLoggerBinder
+
+Depends Upon:
+    java.lang
+    org.gradle.internal
+    org.gradle.logging.internal.slf4j
+    org.slf4j
+    org.slf4j.spi
+
+Used By:
+    org.slf4j
+
+--------------------------------------------------
+- Package: org.slf4j.spi
+--------------------------------------------------
+
+Stats:
+    Total Classes: 1
+    Concrete Classes: 0
+    Abstract Classes: 1
+
+    Ca: 2
+    Ce: 2
+
+    A: 1
+    I: 0.5
+    D: 0.5
+
+Abstract Classes:
+    org.slf4j.spi.LoggerFactoryBinder
+
+Concrete Classes:
+
+Depends Upon:
+    java.lang
+    org.slf4j
+
+Used By:
+    org.slf4j.bridge
+    org.slf4j.impl
+
+
+--------------------------------------------------
+- Package Dependency Cycles:
+--------------------------------------------------
+
+com.vladium.emma.rt
+    |
+    |-> org.jacoco.agent.rt
+    |   org.jacoco.agent.rt.internal_b0d6a23
+    |-> org.jacoco.agent.rt
+
+edu.allegheny.vanschedule
+    |
+    |   org.junit
+    |   org.junit.runners
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+edu.allegheny.vanschedule.frontend
+    |
+    |   edu.allegheny.vanschedule
+    |   org.junit
+    |   org.junit.runners
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+net.rubygrapefruit.platform
+    |
+    |-> net.rubygrapefruit.platform.internal.jni
+    |   net.rubygrapefruit.platform.internal
+    |-> net.rubygrapefruit.platform.internal.jni
+
+net.rubygrapefruit.platform.internal
+    |
+    |   net.rubygrapefruit.platform.internal.jni
+    |-> net.rubygrapefruit.platform.internal
+
+net.rubygrapefruit.platform.internal.jni
+    |
+    |   net.rubygrapefruit.platform.internal
+    |-> net.rubygrapefruit.platform.internal.jni
+
+org.gradle.api.internal.tasks.testing
+    |
+    |   org.gradle.api.internal.tasks.testing.junit
+    |-> org.gradle.api.internal.tasks.testing
+
+org.gradle.api.internal.tasks.testing.junit
+    |
+    |   org.gradle.api.internal.tasks.testing
+    |-> org.gradle.api.internal.tasks.testing.junit
+
+org.gradle.api.internal.tasks.testing.processors
+    |
+    |   org.gradle.api.logging
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.api.internal.tasks.testing.results
+    |
+    |-> org.gradle.api.internal.tasks.testing
+    |   org.gradle.api.internal.tasks.testing.junit
+    |-> org.gradle.api.internal.tasks.testing
+
+org.gradle.api.internal.tasks.testing.worker
+    |
+    |-> org.gradle.api.internal.tasks.testing
+    |   org.gradle.api.internal.tasks.testing.junit
+    |-> org.gradle.api.internal.tasks.testing
+
+org.gradle.api.logging
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.concurrent
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.jvm
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.nativeintegration.filesystem.services
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.nativeintegration.services
+    |
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.serialize
+    |
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.serialize.kryo
+    |
+    |   org.gradle.internal.serialize
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.internal.service
+    |
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.logging
+    |
+    |   org.gradle.api.logging
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.logging.internal
+    |
+    |   org.gradle.logging
+    |   org.gradle.api.logging
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.logging.internal.slf4j
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.actor
+    |
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.actor.internal
+    |
+    |   org.gradle.messaging.actor
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote
+    |
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote.internal
+    |
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote.internal.hub
+    |
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote.internal.hub.protocol
+    |
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote.internal.hub.queue
+    |
+    |   org.gradle.messaging.remote.internal.hub.protocol
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote.internal.inet
+    |
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.messaging.remote.internal.protocol
+    |
+    |   org.gradle.messaging.remote.internal
+    |   org.gradle.internal.service
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.process.internal
+    |
+    |   org.gradle.messaging.remote
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.gradle.process.internal.child
+    |
+    |   org.gradle.messaging.remote
+    |   org.gradle.internal.concurrent
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.jacoco.agent.rt
+    |
+    |   org.jacoco.agent.rt.internal_b0d6a23
+    |-> org.jacoco.agent.rt
+
+org.jacoco.agent.rt.internal_b0d6a23
+    |
+    |   org.jacoco.agent.rt
+    |-> org.jacoco.agent.rt.internal_b0d6a23
+
+org.jacoco.agent.rt.internal_b0d6a23.core.instr
+    |
+    |-> org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    |   org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    |-> org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+
+org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    |
+    |   org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    |-> org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+
+org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+    |
+    |   org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr
+    |-> org.jacoco.agent.rt.internal_b0d6a23.core.runtime
+
+org.jacoco.agent.rt.internal_b0d6a23.output
+    |
+    |-> org.jacoco.agent.rt.internal_b0d6a23
+    |   org.jacoco.agent.rt
+    |-> org.jacoco.agent.rt.internal_b0d6a23
+
+org.junit
+    |
+    |   org.junit.runners
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+org.junit.internal
+    |
+    |   org.junit.runners
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+org.junit.internal.builders
+    |
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+org.junit.internal.requests
+    |
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.internal.runners
+    |
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+org.junit.internal.runners.model
+    |
+    |   org.junit.runners.model
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.internal.runners.rules
+    |
+    |   org.junit.runners.model
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.internal.runners.statements
+    |
+    |   org.junit.runners.model
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.rules
+    |
+    |   org.junit.runners.model
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.runner
+    |
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.runner.notification
+    |
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+org.junit.runners
+    |
+    |-> org.junit.runner.notification
+    |   org.junit.runner
+    |-> org.junit.runner.notification
+
+org.junit.runners.model
+    |
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.junit.validator
+    |
+    |   org.junit.runners.model
+    |-> org.junit.runner
+    |   org.junit.runner.notification
+    |-> org.junit.runner
+
+org.slf4j
+    |
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.slf4j.bridge
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.slf4j.helpers
+    |
+    |   org.slf4j
+    |-> org.slf4j.helpers
+
+org.slf4j.impl
+    |
+    |   org.gradle.logging.internal.slf4j
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+org.slf4j.spi
+    |
+    |-> org.slf4j
+    |   org.slf4j.helpers
+    |-> org.slf4j
+
+
+--------------------------------------------------
+- Summary:
+--------------------------------------------------
+
+Name, Class Count, Abstract Class Count, Ca, Ce, A, I, D, V:
+
+com.esotericsoftware.kryo,1,0,2,1,0,0.33,0.67,1
+com.esotericsoftware.kryo.io,2,0,1,3,0,0.75,0.25,1
+com.google.api.client.auth.oauth2,0,0,1,0,0,0,1,1
+com.google.api.client.extensions.java6.auth.oauth2,0,0,1,0,0,0,1,1
+com.google.api.client.extensions.jetty.auth.oauth2,0,0,1,0,0,0,1,1
+com.google.api.client.googleapis.auth.oauth2,0,0,1,0,0,0,1,1
+com.google.api.client.googleapis.javanet,0,0,1,0,0,0,1,1
+com.google.api.client.googleapis.json,0,0,1,0,0,0,1,1
+com.google.api.client.http,0,0,1,0,0,0,1,1
+com.google.api.client.json,0,0,1,0,0,0,1,1
+com.google.api.client.json.jackson2,0,0,1,0,0,0,1,1
+com.google.api.client.util,0,0,1,0,0,0,1,1
+com.google.api.client.util.store,0,0,1,0,0,0,1,1
+com.google.api.services.calendar,0,0,1,0,0,0,1,1
+com.google.api.services.calendar.model,0,0,1,0,0,0,1,1
+com.google.api.services.gmail,0,0,1,0,0,0,1,1
+com.google.api.services.gmail.model,0,0,1,0,0,0,1,1
+com.google.api.services.script,0,0,1,0,0,0,1,1
+com.google.api.services.script.model,0,0,1,0,0,0,1,1
+com.google.common.base,10,3,4,3,0.3,0.43,0.27,1
+com.google.common.collect,41,10,4,11,0.24,0.73,0.02,1
+com.google.common.primitives,0,0,1,0,0,0,1,1
+com.google.maps,0,0,1,0,0,0,1,1
+com.google.maps.model,0,0,1,0,0,0,1,1
+com.vladium.emma.rt,1,0,0,3,0,1,0,1
+edu.allegheny.vanschedule,21,0,1,5,0,0.83,0.17,1
+edu.allegheny.vanschedule.frontend,10,0,1,26,0,0.96,0.04,1
+jarjar.org.gradle.process.internal.child,0,0,1,0,0,0,1,1
+jarjar.org.gradle.process.internal.launcher,1,0,0,7,0,1,0,1
+java.io,0,0,51,0,0,0,1,1
+java.lang,0,0,95,0,0,0,1,1
+java.lang.annotation,0,0,8,0,0,0,1,1
+java.lang.instrument,0,0,2,0,0,0,1,1
+java.lang.management,0,0,2,0,0,0,1,1
+java.lang.ref,0,0,1,0,0,0,1,1
+java.lang.reflect,0,0,20,0,0,0,1,1
+java.net,0,0,10,0,0,0,1,1
+java.nio,0,0,1,0,0,0,1,1
+java.nio.channels,0,0,3,0,0,0,1,1
+java.security,0,0,3,0,0,0,1,1
+java.text,0,0,3,0,0,0,1,1
+java.util,0,0,54,0,0,0,1,1
+java.util.concurrent,0,0,17,0,0,0,1,1
+java.util.concurrent.atomic,0,0,6,0,0,0,1,1
+java.util.concurrent.locks,0,0,4,0,0,0,1,1
+java.util.jar,0,0,2,0,0,0,1,1
+java.util.logging,0,0,4,0,0,0,1,1
+java.util.regex,0,0,6,0,0,0,1,1
+java.util.zip,0,0,1,0,0,0,1,1
+javax.mail,0,0,1,0,0,0,1,1
+javax.mail.internet,0,0,1,0,0,0,1,1
+javax.management,0,0,1,0,0,0,1,1
+junit.extensions,0,0,1,0,0,0,1,1
+junit.framework,3,2,2,2,0.67,0.5,0.17,1
+net.rubygrapefruit.platform,9,6,3,5,0.67,0.62,0.29,1
+net.rubygrapefruit.platform.internal,17,5,3,7,0.29,0.7,0.01,1
+net.rubygrapefruit.platform.internal.jni,1,0,2,2,0,0.5,0.5,1
+org.apache.commons.lang,1,0,1,3,0,0.75,0.25,1
+org.apache.commons.lang.text,0,0,1,0,0,0,1,1
+org.fusesource.jansi,0,0,1,0,0,0,1,1
+org.gradle.api,4,2,15,1,0.5,0.06,0.44,1
+org.gradle.api.internal.tasks.testing,16,6,4,11,0.38,0.73,0.11,1
+org.gradle.api.internal.tasks.testing.junit,8,1,1,20,0.12,0.95,0.08,1
+org.gradle.api.internal.tasks.testing.processors,7,1,2,10,0.14,0.83,0.02,1
+org.gradle.api.internal.tasks.testing.results,1,0,2,3,0,0.6,0.4,1
+org.gradle.api.internal.tasks.testing.worker,17,1,0,17,0.06,1,0.06,1
+org.gradle.api.logging,5,4,5,2,0.8,0.29,0.09,1
+org.gradle.api.specs,1,1,3,1,1,0.25,0.25,1
+org.gradle.api.tasks.testing,4,2,5,1,0.5,0.17,0.33,1
+org.gradle.cli,1,1,1,1,1,0.5,0.5,1
+org.gradle.internal,7,3,20,8,0.43,0.29,0.29,1
+org.gradle.internal.classloader,10,2,1,9,0.2,0.9,0.1,1
+org.gradle.internal.classpath,0,0,1,0,0,0,1,1
+org.gradle.internal.concurrent,15,6,11,7,0.4,0.39,0.21,1
+org.gradle.internal.event,4,1,1,7,0.25,0.88,0.12,1
+org.gradle.internal.exceptions,2,1,1,5,0.5,0.83,0.33,1
+org.gradle.internal.id,5,1,3,4,0.2,0.57,0.23,1
+org.gradle.internal.io,2,1,6,2,0.5,0.25,0.25,1
+org.gradle.internal.jvm,2,1,1,8,0.5,0.89,0.39,1
+org.gradle.internal.nativeintegration,1,1,1,3,1,0.75,0.75,1
+org.gradle.internal.nativeintegration.console,2,2,2,1,1,0.33,0.33,1
+org.gradle.internal.nativeintegration.filesystem,7,7,2,2,1,0.5,0.5,1
+org.gradle.internal.nativeintegration.filesystem.services,1,0,1,8,0,0.89,0.11,1
+org.gradle.internal.nativeintegration.jna,0,0,1,0,0,0,1,1
+org.gradle.internal.nativeintegration.processenvironment,0,0,1,0,0,0,1,1
+org.gradle.internal.nativeintegration.services,1,0,2,15,0,0.88,0.12,1
+org.gradle.internal.nativeplatform.filesystem,1,1,1,2,1,0.67,0.67,1
+org.gradle.internal.os,7,1,3,4,0.14,0.57,0.29,1
+org.gradle.internal.reflect,6,2,2,9,0.33,0.82,0.15,1
+org.gradle.internal.serialize,31,10,6,6,0.32,0.5,0.18,1
+org.gradle.internal.serialize.kryo,5,0,2,5,0,0.71,0.29,1
+org.gradle.internal.service,22,9,6,11,0.41,0.65,0.06,1
+org.gradle.internal.util,1,1,1,1,1,0.5,0.5,1
+org.gradle.logging,11,6,4,8,0.55,0.67,0.21,1
+org.gradle.logging.internal,46,16,2,18,0.35,0.9,0.25,1
+org.gradle.logging.internal.slf4j,4,0,2,9,0,0.82,0.18,1
+org.gradle.messaging.actor,2,2,3,3,1,0.5,0.5,1
+org.gradle.messaging.actor.internal,2,0,1,5,0,0.83,0.17,1
+org.gradle.messaging.dispatch,9,3,7,5,0.33,0.42,0.25,1
+org.gradle.messaging.remote,5,5,6,5,1,0.45,0.45,1
+org.gradle.messaging.remote.internal,24,10,6,18,0.42,0.75,0.17,1
+org.gradle.messaging.remote.internal.hub,22,2,1,15,0.09,0.94,0.03,1
+org.gradle.messaging.remote.internal.hub.protocol,9,2,2,2,0.22,0.5,0.28,1
+org.gradle.messaging.remote.internal.hub.queue,5,0,1,6,0,0.86,0.14,1
+org.gradle.messaging.remote.internal.inet,9,1,1,15,0.11,0.94,0.05,1
+org.gradle.messaging.remote.internal.protocol,1,0,1,2,0,0.67,0.33,1
+org.gradle.process.internal,1,1,2,2,1,0.5,0.5,1
+org.gradle.process.internal.child,6,1,0,16,0.17,1,0.17,1
+org.gradle.util,4,0,5,6,0,0.55,0.45,1
+org.hamcrest,1,1,2,1,1,0.33,0.33,1
+org.jacoco.agent,1,0,0,3,0,1,0,1
+org.jacoco.agent.rt,2,1,2,4,0.5,0.67,0.17,1
+org.jacoco.agent.rt.internal,0,0,3,0,0,0,1,1
+org.jacoco.agent.rt.internal.output,0,0,2,0,0,0,1,1
+org.jacoco.agent.rt.internal_b0d6a23,11,1,2,24,0.09,0.92,0.01,1
+org.jacoco.agent.rt.internal_b0d6a23.asm,21,5,6,4,0.24,0.4,0.36,1
+org.jacoco.agent.rt.internal_b0d6a23.asm.commons,3,0,1,8,0,0.89,0.11,1
+org.jacoco.agent.rt.internal_b0d6a23.asm.tree,27,1,2,5,0.04,0.71,0.25,1
+org.jacoco.agent.rt.internal_b0d6a23.core,1,0,1,3,0,0.75,0.25,1
+org.jacoco.agent.rt.internal_b0d6a23.core.data,7,2,3,6,0.29,0.67,0.05,1
+org.jacoco.agent.rt.internal_b0d6a23.core.instr,1,0,1,13,0,0.93,0.07,1
+org.jacoco.agent.rt.internal_b0d6a23.core.internal,3,0,1,4,0,0.8,0.2,1
+org.jacoco.agent.rt.internal_b0d6a23.core.internal.data,3,0,4,3,0,0.43,0.57,1
+org.jacoco.agent.rt.internal_b0d6a23.core.internal.flow,13,4,2,9,0.31,0.82,0.13,1
+org.jacoco.agent.rt.internal_b0d6a23.core.internal.instr,13,2,2,14,0.15,0.88,0.03,1
+org.jacoco.agent.rt.internal_b0d6a23.core.runtime,14,4,4,16,0.29,0.8,0.09,1
+org.jacoco.agent.rt.internal_b0d6a23.output,8,1,1,11,0.12,0.92,0.04,1
+org.jacoco.core,0,0,2,0,0,0,1,1
+org.jacoco.core.data,0,0,4,0,0,0,1,1
+org.jacoco.core.instr,0,0,2,0,0,0,1,1
+org.jacoco.core.internal,0,0,2,0,0,0,1,1
+org.jacoco.core.internal.data,0,0,5,0,0,0,1,1
+org.jacoco.core.internal.flow,0,0,3,0,0,0,1,1
+org.jacoco.core.internal.instr,0,0,3,0,0,0,1,1
+org.jacoco.core.runtime,0,0,4,0,0,0,1,1
+org.junit,12,9,6,5,0.75,0.45,0.2,1
+org.junit.internal,4,0,5,6,0,0.55,0.45,1
+org.junit.internal.builders,8,0,2,10,0,0.83,0.17,1
+org.junit.internal.requests,3,0,1,6,0,0.86,0.14,1
+org.junit.internal.runners,3,0,4,10,0,0.71,0.29,1
+org.junit.internal.runners.model,2,1,2,7,0.5,0.78,0.28,1
+org.junit.internal.runners.rules,11,1,1,6,0.09,0.86,0.05,1
+org.junit.internal.runners.statements,6,0,1,6,0,0.86,0.14,1
+org.junit.rules,3,2,2,4,0.67,0.67,0.33,1
+org.junit.runner,6,4,9,12,0.67,0.57,0.24,1
+org.junit.runner.manipulation,3,2,5,1,0.67,0.17,0.17,1
+org.junit.runner.notification,10,2,6,6,0.2,0.5,0.3,1
+org.junit.runners,6,1,3,16,0.17,0.84,0.01,1
+org.junit.runners.model,13,5,9,9,0.38,0.5,0.12,1
+org.junit.validator,9,3,1,5,0.33,0.83,0.17,1
+org.objectweb.asm,0,0,7,0,0,0,1,1
+org.objectweb.asm.commons,0,0,2,0,0,0,1,1
+org.objectweb.asm.tree,0,0,3,0,0,0,1,1
+org.slf4j,3,2,16,6,0.67,0.27,0.06,1
+org.slf4j.bridge,1,0,1,6,0,0.86,0.14,1
+org.slf4j.helpers,2,0,2,4,0,0.67,0.33,1
+org.slf4j.impl,1,0,1,5,0,0.83,0.17,1
+org.slf4j.spi,1,1,2,2,1,0.5,0.5,1
