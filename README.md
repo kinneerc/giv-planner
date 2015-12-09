@@ -1,10 +1,14 @@
 # GIV-planner
 ______
 
-"A Google-integrated van planner"
+"A Google-Integrated Van planner"
 
 # Overview
 ______
+
+Tired of creating hundreds of Google Calendar Events manually? Well,
+then the **Giv-planner** is for you! Give it a shot!
+
 *GIV-planner* is a command line scheduler tool, calculating the best route to a number of locations given a time frame.
 
 # Requirements
@@ -18,6 +22,9 @@ ______
 
 # Installing
 ______
+
+[![INSTALLING GIV-PLANNER](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/giv-planner-install.png)](https://www.youtube.com/watch?v=ZZ6ZfcWwteQ)
+
 The best, and easiest, way to obtain **GIV-planner** is to **clone** it using the `git
 clone` command.
 
@@ -176,6 +183,10 @@ If you want to be less cool, you can navigate to the
 automatically make you less "cool".
 
 ## Run (with Gradle)
+
+[![RUN
+GIV-PLANNER](https://raw.githubusercontent.com/kinneerc/giv-planner/master/images/giv-planner-run.png)](https://www.youtube.com/watch?v=MOpuDAHyDdw)
+
 Again, Gradle makes running this system very easy. Running this system
 is as easy as the following command:
 
@@ -193,6 +204,8 @@ sections below.
 # FAQ
 + [**JAVA_HOME** is not set and no **java** command can be
   found](https://docs.oracle.com/cd/E19509-01/820-3208/inst_cli_jdk_javahome_t/)
++ [Installing GIV-planner](https://www.youtube.com/watch?v=ZZ6ZfcWwteQ)
++ [Running GIV-planner](https://www.youtube.com/watch?v=MOpuDAHyDdw)
 
 # Feedback
 ______
